@@ -1,0 +1,156 @@
+---
+import Header from "../components/Header.astro";
+---
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Ostéopathe animale à Betbèze (65)</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-[#ffe9cd] text-zinc-900 antialiased">
+
+    <Header/>
+
+    <!-- HERO -->
+    <section class="max-w-6xl mx-auto px-6 pt-20 pb-24 text-center">
+      <p class="text-sm tracking-widest text-zinc-500 uppercase">
+        Betbèze · Hautes-Pyrénées
+      </p>
+
+      <h1 class="mt-6 text-5xl md:text-6xl font-light leading-tight tracking-tight">
+        La précision du geste.<br />
+        <span class="font-normal text-zinc-700">La justesse du regard.</span>
+      </h1>
+
+      <p class="mt-6 text-lg text-zinc-600 max-w-2xl mx-auto">
+        Ostéopathe animale spécialisée, j’accompagne chiens, chats et chevaux
+        avec une approche clinique douce, globale et précise.
+      </p>
+
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact"
+           class="px-6 py-3 rounded-full bg-[#ffc001] text-white hover:bg-[#ff9933] transition shadow-sm">
+          Prendre rendez-vous
+        </a>
+
+        <a href="tel:+33XXXXXXXXX"
+           class="px-6 py-3 rounded-full border border-zinc-300 hover:border-zinc-900 transition">
+          Appeler
+        </a>
+      </div>
+    </section>
+
+    <!-- RASSURANCE -->
+    <section class="py-20 bg-white border-y border-zinc-100">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10 text-center">
+
+        <div class="p-6 rounded-2xl hover:shadow-md transition">
+          <h3 class="font-medium text-lg">Approche globale</h3>
+          <p class="mt-2 text-zinc-600 text-sm">
+            Observation complète du corps et du fonctionnement de l’animal.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl hover:shadow-md transition">
+          <h3 class="font-medium text-lg">Expérience vétérinaire</h3>
+          <p class="mt-2 text-zinc-600 text-sm">
+            Expertise clinique et internationale en santé animale.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl hover:shadow-md transition">
+          <h3 class="font-medium text-lg">Soins précis</h3>
+          <p class="mt-2 text-zinc-600 text-sm">
+            Techniques adaptées, respectueuses et non invasives.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ANIMAUX -->
+    <section class="py-24 max-w-6xl mx-auto px-6">
+      <h2 class="text-center text-3xl font-light mb-12">
+        Animaux pris en charge
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <div class="bg-white p-8 rounded-2xl border border-zinc-100 hover:shadow-lg transition">
+          <h3 class="font-medium">Chiens</h3>
+          <p class="text-sm text-zinc-600 mt-2">
+            mobilité, douleurs, récupération
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl border border-zinc-100 hover:shadow-lg transition">
+          <h3 class="font-medium">Chats</h3>
+          <p class="text-sm text-zinc-600 mt-2">
+            stress, posture, confort
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl border border-zinc-100 hover:shadow-lg transition">
+          <h3 class="font-medium">Chevaux</h3>
+          <p class="text-sm text-zinc-600 mt-2">
+            sport, performance, prévention
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LOCAL -->
+    <section class="py-24 bg-zinc-100">
+      <div class="max-w-3xl mx-auto text-center px-6">
+
+        <h2 class="text-3xl font-light">
+          Intervention dans les Hautes-Pyrénées
+        </h2>
+
+        <p class="mt-6 text-zinc-600">
+          Basée à Betbèze (65), déplacement dans tout le département.
+        </p>
+
+        <div class="mt-8">
+          <a href="/contact"
+             class="px-6 py-3 bg-zinc-900 text-white rounded-full hover:bg-zinc-700 transition">
+            Vérifier une disponibilité
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="py-28 text-center max-w-4xl mx-auto px-6">
+
+      <h2 class="text-4xl font-light">
+        Un animal à soulager ?
+      </h2>
+
+      <p class="mt-4 text-zinc-600">
+        Contact simple et rapide.
+      </p>
+
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact"
+           class="px-6 py-3 bg-zinc-900 text-white rounded-full hover:bg-zinc-700 transition">
+          Me contacter
+        </a>
+
+        <a href="tel:+33XXXXXXXXX"
+           class="px-6 py-3 border border-zinc-300 rounded-full hover:border-zinc-900 transition">
+          Appeler
+        </a>
+      </div>
+
+    </section>
+
+  </body>
+</html>
