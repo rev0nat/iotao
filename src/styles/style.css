@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.section-main{
+    @apply max-w-6xl mx-auto px-6 pt-20 pb-24 text-center;
+}
