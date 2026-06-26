@@ -3,3 +3,7 @@
 .section-main{
     @apply max-w-6xl mx-auto px-6 pt-20 pb-24 text-center;
 }
+
+.colors-cta{
+    @apply bg-[#ffc001] text-white hover:bg-[#ff9933] transition;
+}

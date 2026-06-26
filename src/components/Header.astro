@@ -1,13 +1,53 @@
-<header class="w-full py-4 px-4 bg-white">
-    <div class="max-w-6xl mx-auto flex justify-between items-center">
-        <div class="image"><img src="images/ioato.png" alt="logo" class="h-8 w-auto"></div>
-        
-        <div class="font-medium tracking-tight">
-            Ostéopathie animale
-        </div>
+<header class="w-full py-4 px-4 bg-white relative">
+  <div class="max-w-6xl mx-auto flex justify-between items-center">
 
-        <a href="/contact" class="text-sm px-4 py-2 rounded-full bg-[#ffc001] text-white hover:bg-[#ff9933] transition">
-            Contact
+    <!-- Logo -->
+    <div class="image">
+        <a href="/">
+            <img src="images/ioato.png" alt="logo" class="h-8 w-auto">
         </a>
     </div>
+
+    <!-- Desktop nav -->
+    <nav class="hidden md:flex items-center gap-10 text-base font-medium text-zinc-800">
+      <a href="/prestations" class="hover:text-[#ff9933] transition">Prestations</a>
+      <a href="/conseil-entreprise" class="hover:text-[#ff9933] transition">Conseil Entreprise</a>
+      <a href="/a-propos" class="hover:text-[#ff9933] transition">À Propos</a>
+    </nav>
+
+    <!-- CTA + burger -->
+    <div class="flex items-center gap-3">
+
+      <a href="/contact"
+         class="text-sm px-5 py-2 rounded-full bg-[#ffc001] text-white font-medium hover:bg-[#ff9933] transition">
+        Contact
+      </a>
+
+      <!-- Burger button -->
+      <button id="menu-btn" class="md:hidden flex flex-col gap-1">
+        <span class="w-6 h-0.5 bg-zinc-800"></span>
+        <span class="w-6 h-0.5 bg-zinc-800"></span>
+        <span class="w-6 h-0.5 bg-zinc-800"></span>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden md:hidden px-4 pt-4 pb-6">
+    <nav class="flex flex-col gap-4 text-base font-medium text-zinc-800">
+      <a href="/prestations">Prestations</a>
+      <a href="/conseil-entreprise">Conseil Entreprise</a>
+      <a href="/a-propos">À Propos</a>
+    </nav>
+  </div>
+
+  <script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("mobile-menu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
 </header>
