@@ -1,0 +1,168 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+
+
+<main class="text-zinc-900">
+
+  <!-- HERO -->
+  <section class="section-main">
+    <p class="text-sm tracking-widest uppercase text-zinc-500">
+      Prestations
+    </p>
+
+    <h1 class="mt-6 text-5xl md:text-6xl font-light tracking-tight leading-tight">
+      Des soins adaptés.<br />
+      <span class="font-normal text-zinc-700">
+        Pour chaque animal.
+      </span>
+    </h1>
+
+    <p class="mt-6 max-w-2xl mx-auto text-lg text-zinc-600">
+      Chaque consultation est réalisée avec une approche globale afin
+      d'identifier les déséquilibres et d'accompagner votre animal vers un
+      meilleur confort de vie.
+    </p>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="py-20 border-y border-zinc-100 bg-white">
+    <div class="max-w-6xl mx-auto px-6 grid gap-8 md:grid-cols-2">
+
+      <!-- Service -->
+      <div class="cards-main">
+        <div class="flex justify-between items-start gap-6">
+          <h2 class="text-2xl font-medium">
+            Consultation chien
+          </h2>
+
+          <span class="text-2xl font-light whitespace-nowrap">
+            65 €
+          </span>
+        </div>
+
+        <p class="mt-4 text-zinc-600">
+          Consultation complète comprenant l'anamnèse, l'observation,
+          l'examen ostéopathique et le traitement adapté.
+        </p>
+
+        <div class="mt-6 space-y-2 text-sm text-zinc-600">
+          <p>• Bilan locomoteur complet</p>
+          <p>• Manipulations douces et ciblées</p>
+          <p>• Conseils personnalisés</p>
+          <p>• Durée : environ 45 à 60 min</p>
+        </div>
+      </div>
+
+      <!-- Service -->
+      <div class="cards-main">
+        <div class="flex justify-between items-start gap-6">
+          <h2 class="text-2xl font-medium">
+            Consultation chat
+          </h2>
+
+          <span class="text-2xl font-light whitespace-nowrap">
+            60 €
+          </span>
+        </div>
+
+        <p class="mt-4 text-zinc-600">
+          Évaluation complète adaptée au comportement et aux besoins du chat.
+        </p>
+
+        <div class="mt-6 space-y-2 text-sm text-zinc-600">
+          <p>• Examen global</p>
+          <p>• Traitement ostéopathique</p>
+          <p>• Conseils de suivi</p>
+          <p>• Durée : 45 min</p>
+        </div>
+      </div>
+
+      <!-- Service -->
+      <div class="cards-main">
+        <div class="flex justify-between items-start gap-6">
+          <h2 class="text-2xl font-medium">
+            Consultation cheval
+          </h2>
+
+          <span class="text-2xl font-light whitespace-nowrap">
+            90 €
+          </span>
+        </div>
+
+        <p class="mt-4 text-zinc-600">
+          Bilan fonctionnel complet du cheval, en tenant compte de son activité
+          et de son historique.
+        </p>
+
+        <div class="mt-6 space-y-2 text-sm text-zinc-600">
+          <p>• Analyse statique et dynamique</p>
+          <p>• Traitement ostéopathique</p>
+          <p>• Conseils pour la reprise du travail</p>
+          <p>• Durée : 1 h</p>
+        </div>
+      </div>
+
+      <!-- Service -->
+      <div class="cards-main">
+        <div class="flex justify-between items-start gap-6">
+          <h2 class="text-2xl font-medium">
+            Déplacement
+          </h2>
+
+          <span class="text-2xl font-light whitespace-nowrap">
+            Sur devis
+          </span>
+        </div>
+
+        <p class="mt-4 text-zinc-600">
+          Les frais de déplacement peuvent s'ajouter selon la distance.
+          Les tournées sont privilégiées lorsque plusieurs animaux sont
+          consultés dans un même secteur.
+        </p>
+
+        <div class="mt-6 space-y-2 text-sm text-zinc-600">
+          <p>• Déplacement à domicile</p>
+          <p>• Écuries et pensions</p>
+          <p>• Regroupement de rendez-vous possible</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-24">
+    <div class="max-w-3xl mx-auto text-center px-6">
+      <h2 class="text-4xl font-light">
+        Une question avant de prendre rendez-vous ?
+      </h2>
+
+      <p class="mt-4 text-zinc-600">
+        N'hésitez pas à me contacter afin d'échanger sur la situation de votre
+        animal et déterminer la prise en charge la plus adaptée.
+      </p>
+
+      <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+        <a
+          href="/contact"
+          class="px-6 py-3 rounded-full colors-cta shadow-sm transition"
+        >
+          Prendre rendez-vous
+        </a>
+
+        <a
+          href="tel:+33XXXXXXXXX"
+          class="px-6 py-3 rounded-full border border-zinc-300 hover:border-zinc-900 transition"
+        >
+          Appeler
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+</BaseLayout>

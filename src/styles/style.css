@@ -7,3 +7,11 @@
 .colors-cta{
     @apply bg-[#ffc001] text-white hover:bg-[#ff9933] transition;
 }
+
+.cards-main{
+    @apply rounded-2xl p-8 hover:shadow-md transition border border-zinc-100 bg-[#ffe9cd];
+}
+
+.cards-main-white{
+     @apply rounded-2xl p-8 hover:shadow-md transition border border-zinc-100 bg-white;
+}
