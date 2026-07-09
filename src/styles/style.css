@@ -9,9 +9,13 @@
 }
 
 .cards-main{
-    @apply rounded-2xl p-8 hover:shadow-md transition border border-zinc-100 bg-[#ffe9cd];
+    @apply rounded-2xl p-8 hover:shadow-md transition border border-zinc-100 bg-zinc-50;
 }
 
 .cards-main-white{
      @apply rounded-2xl p-8 hover:shadow-md transition border border-zinc-100 bg-white;
+}
+
+.cards-main-title{
+    @apply font-medium text-lg mb-4;
 }
