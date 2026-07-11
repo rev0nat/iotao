@@ -1,5 +1,3 @@
-// src/i18n/fr.ts
-
 export default {
   hero: {
     location: "Betbèze · Hautes-Pyrénées",

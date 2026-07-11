@@ -1,6 +1,12 @@
 ---
-import Header from "../components/Header.astro";
 import "../styles/style.css";
+import Header from "../components/Header.astro";
+
+interface Props {
+  lang: "fr" | "en";
+}
+
+const { lang } = Astro.props as Props;
 ---
 
 <html lang="fr">
@@ -12,7 +18,7 @@ import "../styles/style.css";
   </head>
 
   <body class="bg-[#ffe9cd] text-zinc-900 antialiased">
-    <Header/>
+    <Header lang={lang} />
     <slot/>
   </body>
 </html>

@@ -1,0 +1,185 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro"
+import { getDictionary } from "../../i18n";
+
+interface Props {
+    lang: "fr" | "en";
+}
+
+const { lang } = Astro.props;
+
+const t = getDictionary(lang);
+---
+
+<BaseLayout lang={lang}>
+
+    <!-- HERO -->
+    <section class="section-main section-fur">
+      <p class="text-sm tracking-widest text-zinc-500 uppercase">
+        {t.home.hero.location}
+      </p>
+
+      <h1 class="mt-6 text-5xl md:text-6xl font-light leading-tight tracking-tight">
+        {t.home.hero.title}<br />
+        <span class="font-normal text-zinc-700">{t.home.hero.subtitle}</span>
+      </h1>
+
+      <p class="mt-6 text-lg text-zinc-600 max-w-2xl mx-auto">
+        {t.home.hero.description}
+      </p>
+
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact"
+           class="px-6 py-3 rounded-full colors-cta transition shadow-sm">
+          {t.home.hero.cta}
+        </a>
+
+        <a href="tel:+33XXXXXXXXX"
+           class="px-6 py-3 rounded-full border border-zinc-300 hover:border-zinc-900 transition">
+          {t.home.hero.call}
+        </a>
+      </div>
+    </section>
+
+    <!-- RASSURANCE -->
+    <section class="py-20 bg-white border-y border-zinc-100">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10 text-center">
+
+        <div class="cards-main">
+          <h3 class="cards-main-title">{t.home.reassurance.cards[0].title}</h3>
+          <p class="mt-2 text-zinc-600 text-sm">
+            {t.home.reassurance.cards[0].description}
+          </p>
+        </div>
+
+        <div class="cards-main">
+          <h3 class="cards-main-title">{t.home.reassurance.cards[1].title}</h3>
+          <p class="mt-2 text-zinc-600 text-sm">
+            {t.home.reassurance.cards[1].description}
+          </p>
+        </div>
+
+        <div class="cards-main">
+          <h3 class="cards-main-title">{t.home.reassurance.cards[2].title}</h3>
+          <p class="mt-2 text-zinc-600 text-sm">
+            {t.home.reassurance.cards[2].description}
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- IOATO -->
+    <section class="py-24 max-w-6xl mx-auto px-6 section-organic">
+      <h2 class="text-center text-3xl font-light mb-12">
+        {t.home.iotao.title}
+      </h2>
+
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 text-center">
+
+        <div class="cards-main">
+          <h3 class="cards-main-title">{t.home.iotao.iota.title}</h3>
+          <p class="text-sm text-zinc-600 mt-2">
+            {t.home.iotao.iota.description}
+          </p>
+        </div>
+
+        <div class="cards-main">
+          <h3 class="cards-main-title">{t.home.iotao.tao.title}</h3>
+          <p class="text-sm text-zinc-600 mt-2">
+            {t.home.iotao.tao.description}
+          </p>
+        </div>
+
+      </div>
+      <div class="mt-12 max-w-3xl mx-auto text-center">
+        <p class="text-zinc-600 leading-relaxed">
+          {t.home.iotao.conclusion}
+        </p>
+      </div>
+    </section>
+
+    <!-- DOUBLE EXPERTISE -->
+
+    <section class="py-24 px-6 bg-white">
+      <h2 class="text-center text-3xl font-light mb-12">
+        {t.home.expertise.title}
+      </h2>
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 text-left">
+
+        <div class="cards-main">
+          <h3 class="cards-main-title mb-4">{t.home.expertise.cards[0].title}</h3>
+          <p class="text-sm text-zinc-600 mb-4">
+            {t.home.expertise.cards[0].description}
+          </p>
+          <a href="/consultations" class="text-zinc-900 underline hover:no-underline text-sm">
+            {t.home.expertise.cards[0].link}
+          </a>
+        </div>
+
+        <div class="cards-main">
+          <h3 class="cards-main-title mb-4">{t.home.expertise.cards[1].title}</h3>
+          <p class="text-sm text-zinc-600 mb-4">
+            {t.home.expertise.cards[1].description}
+          </p>
+          <a href="/conseil" class="text-zinc-900 underline hover:no-underline text-sm">
+            {t.home.expertise.cards[1].link}
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    
+    <!-- DOUBLE EXPERTISE -->
+    <section class="py-24 px-6">
+      <h2 class="text-center text-3xl font-light mb-12">
+        {t.home.experience.title}
+      </h2>
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 text-left">
+
+        <div class="cards-main">
+          <h3 class="cards-main-title mb-4">{t.home.experience.cards[0].title}</h3>
+          <p class="text-sm text-zinc-600 mb-4">
+            {t.home.experience.cards[0].description}
+          </p>
+          <a href="/consultations" class="text-zinc-900 underline hover:no-underline text-sm">
+            {t.home.experience.cards[0].link}
+          </a>
+        </div>
+
+        <div class="cards-main">
+          <h3 class="cards-main-title mb-4">{t.home.experience.cards[1].title}</h3>
+          <p class="text-sm text-zinc-600 mb-4">
+            {t.home.experience.cards[1].description}
+          </p>
+          <a href="/conseil" class="text-zinc-900 underline hover:no-underline text-sm">
+            {t.home.experience.cards[1].link}
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="py-28 text-center mx-auto px-6 bg-white">
+
+      <h2 class="text-4xl font-light">
+        {t.home.cta.title}
+      </h2>
+
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact"
+           class="px-6 py-3 text-white rounded-full colors-cta">
+          {t.home.cta.contact}
+        </a>
+
+        <a href="tel:+33XXXXXXXXX"
+           class="px-6 py-3 border border-zinc-300 rounded-full hover:border-zinc-900 transition">
+          {t.home.cta.call}
+        </a>
+      </div>
+
+    </section>
+
+</BaseLayout>

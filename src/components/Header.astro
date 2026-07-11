@@ -1,18 +1,38 @@
+---
+import frCommon from "../i18n/fr/common";
+import enCommon from "../i18n/en/common";
+
+interface Props {
+  lang: "fr" | "en";
+}
+
+const { lang } = Astro.props as Props;
+
+const t = lang === "fr" ? frCommon : enCommon;
+---
+
+
 <header class="w-full py-4 px-4 bg-white relative">
   <div class="max-w-6xl mx-auto flex justify-between items-center">
 
     <!-- Logo -->
     <div class="image">
         <a href="/">
-            <img src="images/ioato.png" alt="logo" class="h-8 w-auto">
+            <img src="/images/ioato.png" alt="logo" class="h-8 w-auto">
         </a>
     </div>
 
     <!-- Desktop nav -->
     <nav class="hidden md:flex items-center gap-10 text-base font-medium text-zinc-800">
-      <a href="/prestations" class="hover:text-[#ff9933] transition">Prestations</a>
-      <a href="/conseil" class="hover:text-[#ff9933] transition">Conseil</a>
-      <a href="/a-propos" class="hover:text-[#ff9933] transition">À Propos</a>
+      <a href={t.nav.consultations.href} class="hover:text-[#ff9933] transition">
+        {t.nav.consultations.label}
+      </a>
+      <a href={t.nav.consulting.href} class="hover:text-[#ff9933] transition">
+        {t.nav.consulting.label}
+      </a>
+      <a href={t.nav.about.href} class="hover:text-[#ff9933] transition">
+        {t.nav.about.label}
+      </a>
     </nav>
 
     <!-- CTA + burger -->
