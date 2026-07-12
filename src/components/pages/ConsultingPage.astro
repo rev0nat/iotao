@@ -1,0 +1,272 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro"
+import { getDictionary } from "../../i18n";
+
+interface Props {
+    lang: "fr" | "en";
+}
+
+const { lang } = Astro.props;
+
+const t = getDictionary(lang);
+---
+
+<BaseLayout lang={lang}>
+    <main class="text-zinc-900">
+
+    <!-- HERO -->
+    <section class="section-main">
+        <p class="text-sm tracking-widest uppercase text-zinc-500">
+        Conseil
+        </p>
+
+        <h1 class="mt-6 text-5xl md:text-6xl font-light tracking-tight leading-tight">
+        Conseil en santé animale<br />
+        <span class="font-normal text-zinc-700">
+            Une expertise scientifique et stratégique
+        </span>
+        </h1>
+
+        <p class="mt-6 max-w-2xl mx-auto text-lg text-zinc-600">
+        J'accompagne les entreprises qui développent des solutions en santé, nutrition et bien-être animal.
+        </p>
+    </section>
+
+    <!-- PRESENTATION -->
+    <section class="py-24 bg-white border-y border-zinc-100">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+
+            <p class="text-sm tracking-widest uppercase text-zinc-500">
+            Une même méthode
+            </p>
+
+            <h2 class="mt-4 text-4xl font-light tracking-tight">
+            Observer avant d'agir.
+            </h2>
+
+            <div class="mt-8 max-w-3xl mx-auto text-lg text-zinc-600 leading-8">
+
+            <p>
+                Que j'accompagne un animal ou une entreprise, ma démarche reste la même :
+                observer avec attention, comprendre les interactions, identifier les leviers
+                essentiels, puis mettre en œuvre des solutions précises, adaptées et durables.
+                Parce que les transformations les plus profondes naissent souvent d'un détail
+                justement observé.
+            </p>
+
+            </div>
+
+            <div class="mt-16">
+            <h3 class="text-2xl font-light text-zinc-900">
+                Travaillons ensemble
+            </h3>
+            <p class="mt-4 text-lg text-zinc-600 max-w-2xl mx-auto leading-8">
+                Chaque situation est unique. Je vous propose un premier échange afin de comprendre votre besoin et construire un accompagnement adapté.
+            </p>
+            </div>
+
+        </div>
+        </section>
+
+    <!-- DOMAINES D'INTERVENTION -->
+    <section class="py-20">
+        <div class="max-w-6xl mx-auto px-6 grid gap-8 md:grid-cols-2">
+
+            <!-- Card -->
+            <div class="cards-main">
+            <h3 class="text-2xl font-medium">
+                Domaines d'intervention
+            </h3>
+
+            <div class="mt-6 space-y-2 text-sm text-zinc-600">
+                <p>• Stratégie</p>
+                <p>• Développement</p>
+                <p>• Innovation</p>
+            </div>
+            </div>
+
+            <!-- Card -->
+            <div class="cards-main">
+            <h3 class="text-2xl font-medium">
+                Positionnement
+            </h3>
+
+            <div class="mt-6 space-y-2 text-sm text-zinc-600">
+                <p>• Santé animale</p>
+                <p>• Expertise vétérinaire</p>
+                <p>• Nutrition</p>
+                <p>• Bien-être animal</p>
+            </div>
+            </div>
+
+            <!-- Card -->
+            <div class="cards-main">
+            <h3 class="text-2xl font-medium">
+                Médecine préventive
+            </h3>
+
+            <div class="mt-6 space-y-2 text-sm text-zinc-600">
+                <p>• Développement international</p>
+                <p>• Croissance</p>
+                <p>• Business development</p>
+                <p>• Partenariats</p>
+                <p>• Accompagnement des équipes</p>
+            </div>
+            </div>
+
+            <!-- Card -->
+            <div class="cards-main">
+            <h3 class="text-2xl font-medium">
+                Gouvernance
+            </h3>
+
+            <div class="mt-6 space-y-2 text-sm text-zinc-600">
+                <p>• Conseil de direction</p>
+                <p>• Transformation des organisations</p>
+                <p>• Mentoring</p>
+            </div>
+            </div>
+
+        </div>
+    </section>
+    
+
+    <!-- DETAILS PRESTATIONS -->
+    <section class="py-20 bg-white border-y border-zinc-100">
+        <div class="max-w-6xl mx-auto px-6 grid gap-8 md:grid-cols-2">
+
+        <!-- Card -->
+        <div class="cards-main">
+            <div class="flex justify-between items-start gap-6">
+            <h3 class="text-2xl font-medium">
+                Audit & conseil
+            </h3>
+
+            <span class="text-2xl font-light whitespace-nowrap">
+                À partir de 350 €
+            </span>
+            </div>
+
+            <p class="mt-4 text-zinc-600">
+            Analyse de vos besoins, recommandations et accompagnement dans vos
+            projets de développement.
+            </p>
+
+            <div class="mt-6 space-y-2 text-sm text-zinc-600">
+            <p>• Audit de structure</p>
+            <p>• Recommandations personnalisées</p>
+            <p>• Compte-rendu et plan d'action</p>
+            </div>
+        </div>
+
+        <!-- Card -->
+        <div class="cards-main">
+            <div class="flex justify-between items-start gap-6">
+            <h3 class="text-2xl font-medium">
+                Formation
+            </h3>
+
+            <span class="text-2xl font-light whitespace-nowrap">
+                Sur devis
+            </span>
+            </div>
+
+            <p class="mt-4 text-zinc-600">
+            Sessions de formation adaptées aux équipes et aux objectifs de votre
+            entreprise.
+            </p>
+
+            <div class="mt-6 space-y-2 text-sm text-zinc-600">
+            <p>• Présentiel ou distanciel</p>
+            <p>• Programme personnalisé</p>
+            <p>• Support pédagogique inclus</p>
+            </div>
+        </div>
+
+        <!-- Card -->
+        <div class="cards-main">
+            <div class="flex justify-between items-start gap-6">
+            <h3 class="text-2xl font-medium">
+                Expertise clinique
+            </h3>
+
+            <span class="text-2xl font-light whitespace-nowrap">
+                Sur devis
+            </span>
+            </div>
+
+            <p class="mt-4 text-zinc-600">
+            Accompagnement ponctuel ou régulier sur des problématiques techniques
+            ou cliniques spécifiques.
+            </p>
+
+            <div class="mt-6 space-y-2 text-sm text-zinc-600">
+            <p>• Études de cas</p>
+            <p>• Conseils techniques</p>
+            <p>• Collaboration avec les équipes</p>
+            </div>
+        </div>
+
+        <!-- Card -->
+        <div class="cards-main">
+            <div class="flex justify-between items-start gap-6">
+            <h3 class="text-2xl font-medium">
+                Accompagnement de projet
+            </h3>
+
+            <span class="text-2xl font-light whitespace-nowrap">
+                Sur devis
+            </span>
+            </div>
+
+            <p class="mt-4 text-zinc-600">
+            Participation au développement de projets en santé animale, innovation
+            ou stratégie d'entreprise.
+            </p>
+
+            <div class="mt-6 space-y-2 text-sm text-zinc-600">
+            <p>• Conseil stratégique</p>
+            <p>• Suivi de projet</p>
+            <p>• Intervention personnalisée</p>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+
+        <h2 class="text-4xl font-light">
+            Un projet à discuter ?
+        </h2>
+
+        <p class="mt-4 text-lg text-zinc-600">
+            Chaque collaboration étant unique, n'hésitez pas à me contacter afin
+            d'échanger sur vos besoins et obtenir un devis personnalisé.
+        </p>
+
+        <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+
+            <a
+            href="/contact"
+            class="px-6 py-3 rounded-full colors-cta transition shadow-sm"
+            >
+            Demander un devis
+            </a>
+
+            <a
+            href="mailto:contact@votresite.fr"
+            class="px-6 py-3 rounded-full border border-zinc-300 hover:border-zinc-900 transition"
+            >
+            Envoyer un e-mail
+            </a>
+
+        </div>
+
+        </div>
+    </section>
+
+    </main>
+</BaseLayout>
