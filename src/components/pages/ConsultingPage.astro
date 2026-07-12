@@ -17,18 +17,18 @@ const t = getDictionary(lang);
     <!-- HERO -->
     <section class="section-main">
         <p class="text-sm tracking-widest uppercase text-zinc-500">
-        Conseil
+        {t.consulting.hero.eyebrow}
         </p>
 
         <h1 class="mt-6 text-5xl md:text-6xl font-light tracking-tight leading-tight">
-        Conseil en santé animale<br />
+        {t.consulting.hero.title}<br />
         <span class="font-normal text-zinc-700">
-            Une expertise scientifique et stratégique
+            {t.consulting.hero.subtitle}
         </span>
         </h1>
 
         <p class="mt-6 max-w-2xl mx-auto text-lg text-zinc-600">
-        J'accompagne les entreprises qui développent des solutions en santé, nutrition et bien-être animal.
+        {t.consulting.hero.description}
         </p>
     </section>
 
@@ -37,31 +37,27 @@ const t = getDictionary(lang);
         <div class="max-w-4xl mx-auto px-6 text-center">
 
             <p class="text-sm tracking-widest uppercase text-zinc-500">
-            Une même méthode
+            {t.consulting.method.eyebrow}
             </p>
 
             <h2 class="mt-4 text-4xl font-light tracking-tight">
-            Observer avant d'agir.
+            {t.consulting.method.title}
             </h2>
 
             <div class="mt-8 max-w-3xl mx-auto text-lg text-zinc-600 leading-8">
 
             <p>
-                Que j'accompagne un animal ou une entreprise, ma démarche reste la même :
-                observer avec attention, comprendre les interactions, identifier les leviers
-                essentiels, puis mettre en œuvre des solutions précises, adaptées et durables.
-                Parce que les transformations les plus profondes naissent souvent d'un détail
-                justement observé.
+                {t.consulting.method.description}
             </p>
 
             </div>
 
             <div class="mt-16">
             <h3 class="text-2xl font-light text-zinc-900">
-                Travaillons ensemble
+                {t.consulting.method.collaborationTitle}
             </h3>
             <p class="mt-4 text-lg text-zinc-600 max-w-2xl mx-auto leading-8">
-                Chaque situation est unique. Je vous propose un premier échange afin de comprendre votre besoin et construire un accompagnement adapté.
+                {t.consulting.method.collaborationDescription}
             </p>
             </div>
 
@@ -75,55 +71,55 @@ const t = getDictionary(lang);
             <!-- Card -->
             <div class="cards-main">
             <h3 class="text-2xl font-medium">
-                Domaines d'intervention
+                {t.consulting.domains.cards[0].title}
             </h3>
 
             <div class="mt-6 space-y-2 text-sm text-zinc-600">
-                <p>• Stratégie</p>
-                <p>• Développement</p>
-                <p>• Innovation</p>
+                <p>{t.consulting.domains.cards[0].items[0]}</p>
+                <p>{t.consulting.domains.cards[0].items[1]}</p>
+                <p>{t.consulting.domains.cards[0].items[2]}</p>
             </div>
             </div>
 
             <!-- Card -->
             <div class="cards-main">
             <h3 class="text-2xl font-medium">
-                Positionnement
+                {t.consulting.domains.cards[1].title}
             </h3>
 
             <div class="mt-6 space-y-2 text-sm text-zinc-600">
-                <p>• Santé animale</p>
-                <p>• Expertise vétérinaire</p>
-                <p>• Nutrition</p>
-                <p>• Bien-être animal</p>
+                <p>{t.consulting.domains.cards[1].items[0]}</p>
+                <p>{t.consulting.domains.cards[1].items[1]}</p>
+                <p>{t.consulting.domains.cards[1].items[2]}</p>
+                <p>{t.consulting.domains.cards[1].items[3]}</p>
             </div>
             </div>
 
             <!-- Card -->
             <div class="cards-main">
             <h3 class="text-2xl font-medium">
-                Médecine préventive
+                {t.consulting.domains.cards[2].title}
             </h3>
 
             <div class="mt-6 space-y-2 text-sm text-zinc-600">
-                <p>• Développement international</p>
-                <p>• Croissance</p>
-                <p>• Business development</p>
-                <p>• Partenariats</p>
-                <p>• Accompagnement des équipes</p>
+                <p>{t.consulting.domains.cards[2].items[0]}</p>
+                <p>{t.consulting.domains.cards[2].items[1]}</p>
+                <p>{t.consulting.domains.cards[2].items[2]}</p>
+                <p>{t.consulting.domains.cards[2].items[3]}</p>
+                <p>{t.consulting.domains.cards[2].items[4]}</p>
             </div>
             </div>
 
             <!-- Card -->
             <div class="cards-main">
             <h3 class="text-2xl font-medium">
-                Gouvernance
+                {t.consulting.domains.cards[3].title}
             </h3>
 
             <div class="mt-6 space-y-2 text-sm text-zinc-600">
-                <p>• Conseil de direction</p>
-                <p>• Transformation des organisations</p>
-                <p>• Mentoring</p>
+                <p>{t.consulting.domains.cards[3].items[0]}</p>
+                <p>{t.consulting.domains.cards[3].items[1]}</p>
+                <p>{t.consulting.domains.cards[3].items[2]}</p>
             </div>
             </div>
 
@@ -139,23 +135,22 @@ const t = getDictionary(lang);
         <div class="cards-main">
             <div class="flex justify-between items-start gap-6">
             <h3 class="text-2xl font-medium">
-                Audit & conseil
+                {t.consulting.services.cards[0].title}
             </h3>
 
             <span class="text-2xl font-light whitespace-nowrap">
-                À partir de 350 €
+                {t.consulting.services.cards[0].price}
             </span>
             </div>
 
             <p class="mt-4 text-zinc-600">
-            Analyse de vos besoins, recommandations et accompagnement dans vos
-            projets de développement.
+            {t.consulting.services.cards[0].description}
             </p>
 
             <div class="mt-6 space-y-2 text-sm text-zinc-600">
-            <p>• Audit de structure</p>
-            <p>• Recommandations personnalisées</p>
-            <p>• Compte-rendu et plan d'action</p>
+            <p>{t.consulting.services.cards[0].items[0]}</p>
+            <p>{t.consulting.services.cards[0].items[1]}</p>
+            <p>{t.consulting.services.cards[0].items[2]}</p>
             </div>
         </div>
 
@@ -163,23 +158,22 @@ const t = getDictionary(lang);
         <div class="cards-main">
             <div class="flex justify-between items-start gap-6">
             <h3 class="text-2xl font-medium">
-                Formation
+                {t.consulting.services.cards[1].title}
             </h3>
 
             <span class="text-2xl font-light whitespace-nowrap">
-                Sur devis
+                {t.consulting.services.cards[1].price}
             </span>
             </div>
 
             <p class="mt-4 text-zinc-600">
-            Sessions de formation adaptées aux équipes et aux objectifs de votre
-            entreprise.
+            {t.consulting.services.cards[1].description}
             </p>
 
             <div class="mt-6 space-y-2 text-sm text-zinc-600">
-            <p>• Présentiel ou distanciel</p>
-            <p>• Programme personnalisé</p>
-            <p>• Support pédagogique inclus</p>
+            <p>{t.consulting.services.cards[1].items[0]}</p>
+            <p>{t.consulting.services.cards[1].items[1]}</p>
+            <p>{t.consulting.services.cards[1].items[2]}</p>
             </div>
         </div>
 
@@ -187,23 +181,22 @@ const t = getDictionary(lang);
         <div class="cards-main">
             <div class="flex justify-between items-start gap-6">
             <h3 class="text-2xl font-medium">
-                Expertise clinique
+                {t.consulting.services.cards[2].title}
             </h3>
 
             <span class="text-2xl font-light whitespace-nowrap">
-                Sur devis
+                {t.consulting.services.cards[2].price}
             </span>
             </div>
 
             <p class="mt-4 text-zinc-600">
-            Accompagnement ponctuel ou régulier sur des problématiques techniques
-            ou cliniques spécifiques.
+            {t.consulting.services.cards[2].description}
             </p>
 
             <div class="mt-6 space-y-2 text-sm text-zinc-600">
-            <p>• Études de cas</p>
-            <p>• Conseils techniques</p>
-            <p>• Collaboration avec les équipes</p>
+            <p>{t.consulting.services.cards[2].items[0]}</p>
+            <p>{t.consulting.services.cards[2].items[1]}</p>
+            <p>{t.consulting.services.cards[2].items[2]}</p>
             </div>
         </div>
 
@@ -211,23 +204,22 @@ const t = getDictionary(lang);
         <div class="cards-main">
             <div class="flex justify-between items-start gap-6">
             <h3 class="text-2xl font-medium">
-                Accompagnement de projet
+                {t.consulting.services.cards[3].title}
             </h3>
 
             <span class="text-2xl font-light whitespace-nowrap">
-                Sur devis
+                {t.consulting.services.cards[3].price}
             </span>
             </div>
 
             <p class="mt-4 text-zinc-600">
-            Participation au développement de projets en santé animale, innovation
-            ou stratégie d'entreprise.
+            {t.consulting.services.cards[3].description}
             </p>
 
             <div class="mt-6 space-y-2 text-sm text-zinc-600">
-            <p>• Conseil stratégique</p>
-            <p>• Suivi de projet</p>
-            <p>• Intervention personnalisée</p>
+            <p>{t.consulting.services.cards[3].items[0]}</p>
+            <p>{t.consulting.services.cards[3].items[1]}</p>
+            <p>{t.consulting.services.cards[3].items[2]}</p>
             </div>
         </div>
 
@@ -239,12 +231,11 @@ const t = getDictionary(lang);
         <div class="max-w-3xl mx-auto px-6 text-center">
 
         <h2 class="text-4xl font-light">
-            Un projet à discuter ?
+            {t.consulting.cta.title}
         </h2>
 
         <p class="mt-4 text-lg text-zinc-600">
-            Chaque collaboration étant unique, n'hésitez pas à me contacter afin
-            d'échanger sur vos besoins et obtenir un devis personnalisé.
+            {t.consulting.cta.description}
         </p>
 
         <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
@@ -253,14 +244,14 @@ const t = getDictionary(lang);
             href="/contact"
             class="px-6 py-3 rounded-full colors-cta transition shadow-sm"
             >
-            Demander un devis
+            {t.consulting.cta.primaryButton}
             </a>
 
             <a
             href="mailto:contact@votresite.fr"
             class="px-6 py-3 rounded-full border border-zinc-300 hover:border-zinc-900 transition"
             >
-            Envoyer un e-mail
+            {t.consulting.cta.secondaryButton}
             </a>
 
         </div>

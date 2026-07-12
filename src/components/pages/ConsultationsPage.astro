@@ -19,19 +19,18 @@ const t = getDictionary(lang);
   <!-- HERO -->
   <section class="section-main">
     <p class="text-sm tracking-widest uppercase text-zinc-500">
-      Consultations
+      {t.consultations.hero.eyebrow}
     </p>
 
     <h1 class="mt-6 text-5xl md:text-6xl font-light tracking-tight leading-tight">
-      Des soins adaptés.<br />
+      {t.consultations.hero.title}<br />
       <span class="font-normal text-zinc-700">
-        Pour chaque animal.
+        {t.consultations.hero.subtitle}
       </span>
     </h1>
 
     <p class="mt-6 max-w-2xl mx-auto text-lg text-zinc-600">
-      La médecine manuelle vétérinaire est une approche complémentaire de la médecine générale 
-      vétérinaire qui s'appuie sur l'examen clinique, le toucher et la compréhension des équilibres fonctionnels de l'animal.
+      {t.consultations.hero.description}
     </p>
   </section>
 
@@ -42,16 +41,16 @@ const t = getDictionary(lang);
       <div class="cards-main">
         <div class="flex justify-between items-start gap-6">
           <h2 class="text-2xl font-medium">
-            Pour quels animaux ?
+            {t.consultations.overview.cards[0].title}
           </h2>
         </div>
 
         <div class="mt-6 space-y-2 text-sm text-zinc-600">
-          <p>• Chiens</p>
-          <p>• Chats</p>
-          <p>• Chevaux</p>
-          <p>• Animaux d'élevage</p>
-          <p>• Pour tout autre animal, n'hésitez pas à me contacter</p>
+          <p>{t.consultations.overview.cards[0].items[0]}</p>
+          <p>{t.consultations.overview.cards[0].items[1]}</p>
+          <p>{t.consultations.overview.cards[0].items[2]}</p>
+          <p>{t.consultations.overview.cards[0].items[3]}</p>
+          <p>{t.consultations.overview.cards[0].items[4]}</p>
         </div>
       </div>
 
@@ -59,18 +58,18 @@ const t = getDictionary(lang);
       <div class="cards-main">
         <div class="flex justify-between items-start gap-6">
           <h2 class="text-2xl font-medium">
-            Quand consulter ?
+            {t.consultations.overview.cards[1].title}
           </h2>
         </div>
 
         <div class="mt-6 space-y-2 text-sm text-zinc-600">
-          <p>• Baisse de performance</p>
-          <p>• Inconfort locomoteur</p>
-          <p>• Récupération après un traumatisme</p>
-          <p>• Suivi sportif</p>
-          <p>• Accompagnement de gestation et des nouveau-nés</p>
-          <p>• Accompagnement du vieillissement</p>
-          <p>• Suivi complémentaire d'une prise en charge vétérinaire</p>
+          <p>{t.consultations.overview.cards[1].items[0]}</p>
+          <p>{t.consultations.overview.cards[1].items[1]}</p>
+          <p>{t.consultations.overview.cards[1].items[2]}</p>
+          <p>{t.consultations.overview.cards[1].items[3]}</p>
+          <p>{t.consultations.overview.cards[1].items[4]}</p>
+          <p>{t.consultations.overview.cards[1].items[5]}</p>
+          <p>{t.consultations.overview.cards[1].items[6]}</p>
         </div>
       </div>
 
@@ -78,17 +77,17 @@ const t = getDictionary(lang);
       <div class="cards-main">
         <div class="flex justify-between items-start gap-6">
           <h2 class="text-2xl font-medium">
-            Déroulement d'une consultation
+            {t.consultations.overview.cards[2].title}
           </h2>
         </div>
 
         <div class="mt-6 space-y-2 text-sm text-zinc-600">
-          <p>• Échange et recueil des antécédents</p>
-          <p>• Examen clinique vétérinaire</p>
-          <p>• Évaluation du mouvement</p>
-          <p>• Examen manuel</p>
-          <p>• Traitement adapté</p>
-          <p>• Conseils personnalisés</p>
+          <p>{t.consultations.overview.cards[2].items[0]}</p>
+          <p>{t.consultations.overview.cards[2].items[1]}</p>
+          <p>{t.consultations.overview.cards[2].items[2]}</p>
+          <p>{t.consultations.overview.cards[2].items[3]}</p>
+          <p>{t.consultations.overview.cards[2].items[4]}</p>
+          <p>{t.consultations.overview.cards[2].items[5]}</p>
         </div>
       </div>
 
@@ -96,14 +95,12 @@ const t = getDictionary(lang);
       <div class="cards-main">
         <div class="flex justify-between items-start gap-6">
           <h2 class="text-2xl font-medium">
-            Une médecine du toucher
+            {t.consultations.overview.cards[3].title}
           </h2>
         </div>
 
         <p class="mt-4 text-zinc-600 text-sm">
-          Le toucher est un outil d'observation autant qu'un outil thérapeutique.
-          Chaque geste est guidé par l'écoute des tissus, la précision du diagnostic et le respect de la physiologie de l'animal.
-          L'objectif n'est jamais le geste pour lui-même, mais la recherche du mouvement juste.
+          {t.consultations.overview.cards[3].description}
         </p>
       </div>
 
@@ -118,24 +115,23 @@ const t = getDictionary(lang);
       <div class="cards-main">
         <div class="flex justify-between items-start gap-6">
           <h2 class="text-2xl font-medium">
-            Consultation chien
+            {t.consultations.services.cards[0].title}
           </h2>
 
           <span class="text-2xl font-light whitespace-nowrap">
-            65 €
+            {t.consultations.services.cards[0].price}
           </span>
         </div>
 
         <p class="mt-4 text-zinc-600">
-          Consultation complète comprenant l'anamnèse, l'observation,
-          l'examen ostéopathique et le traitement adapté.
+          {t.consultations.services.cards[0].description}
         </p>
 
         <div class="mt-6 space-y-2 text-sm text-zinc-600">
-          <p>• Bilan locomoteur complet</p>
-          <p>• Manipulations douces et ciblées</p>
-          <p>• Conseils personnalisés</p>
-          <p>• Durée : environ 45 à 60 min</p>
+          <p>{t.consultations.services.cards[0].items[0]}</p>
+          <p>{t.consultations.services.cards[0].items[1]}</p>
+          <p>{t.consultations.services.cards[0].items[2]}</p>
+          <p>{t.consultations.services.cards[0].items[3]}</p>
         </div>
       </div>
 
@@ -143,23 +139,23 @@ const t = getDictionary(lang);
       <div class="cards-main">
         <div class="flex justify-between items-start gap-6">
           <h2 class="text-2xl font-medium">
-            Consultation chat
+            {t.consultations.services.cards[1].title}
           </h2>
 
           <span class="text-2xl font-light whitespace-nowrap">
-            60 €
+            {t.consultations.services.cards[1].price}
           </span>
         </div>
 
         <p class="mt-4 text-zinc-600">
-          Évaluation complète adaptée au comportement et aux besoins du chat.
+          {t.consultations.services.cards[1].description}
         </p>
 
         <div class="mt-6 space-y-2 text-sm text-zinc-600">
-          <p>• Examen global</p>
-          <p>• Traitement ostéopathique</p>
-          <p>• Conseils de suivi</p>
-          <p>• Durée : 45 min</p>
+          <p>{t.consultations.services.cards[1].items[0]}</p>
+          <p>{t.consultations.services.cards[1].items[1]}</p>
+          <p>{t.consultations.services.cards[1].items[2]}</p>
+          <p>{t.consultations.services.cards[1].items[3]}</p>
         </div>
       </div>
 
@@ -167,24 +163,23 @@ const t = getDictionary(lang);
       <div class="cards-main">
         <div class="flex justify-between items-start gap-6">
           <h2 class="text-2xl font-medium">
-            Consultation cheval
+            {t.consultations.services.cards[2].title}
           </h2>
 
           <span class="text-2xl font-light whitespace-nowrap">
-            90 €
+            {t.consultations.services.cards[2].price}
           </span>
         </div>
 
         <p class="mt-4 text-zinc-600">
-          Bilan fonctionnel complet du cheval, en tenant compte de son activité
-          et de son historique.
+          {t.consultations.services.cards[2].description}
         </p>
 
         <div class="mt-6 space-y-2 text-sm text-zinc-600">
-          <p>• Analyse statique et dynamique</p>
-          <p>• Traitement ostéopathique</p>
-          <p>• Conseils pour la reprise du travail</p>
-          <p>• Durée : 1 h</p>
+          <p>{t.consultations.services.cards[2].items[0]}</p>
+          <p>{t.consultations.services.cards[2].items[1]}</p>
+          <p>{t.consultations.services.cards[2].items[2]}</p>
+          <p>{t.consultations.services.cards[2].items[3]}</p>
         </div>
       </div>
 
@@ -192,24 +187,22 @@ const t = getDictionary(lang);
       <div class="cards-main">
         <div class="flex justify-between items-start gap-6">
           <h2 class="text-2xl font-medium">
-            Déplacement
+            {t.consultations.services.cards[3].title}
           </h2>
 
           <span class="text-2xl font-light whitespace-nowrap">
-            Sur devis
+            {t.consultations.services.cards[3].price}
           </span>
         </div>
 
         <p class="mt-4 text-zinc-600">
-          Les frais de déplacement peuvent s'ajouter selon la distance.
-          Les tournées sont privilégiées lorsque plusieurs animaux sont
-          consultés dans un même secteur.
+          {t.consultations.services.cards[3].description}
         </p>
 
         <div class="mt-6 space-y-2 text-sm text-zinc-600">
-          <p>• Déplacement à domicile</p>
-          <p>• Écuries et pensions</p>
-          <p>• Regroupement de rendez-vous possible</p>
+          <p>{t.consultations.services.cards[3].items[0]}</p>
+          <p>{t.consultations.services.cards[3].items[1]}</p>
+          <p>{t.consultations.services.cards[3].items[2]}</p>
         </div>
       </div>
 
@@ -220,12 +213,11 @@ const t = getDictionary(lang);
   <section class="py-24 bg-white border-y border-zinc-100">
     <div class="max-w-3xl mx-auto text-center px-6">
       <h2 class="text-4xl font-light">
-        Une question avant de prendre rendez-vous ?
+        {t.consultations.cta.title}
       </h2>
 
       <p class="mt-4 text-zinc-600">
-        N'hésitez pas à me contacter afin d'échanger sur la situation de votre
-        animal et déterminer la prise en charge la plus adaptée.
+        {t.consultations.cta.description}
       </p>
 
       <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
@@ -233,14 +225,14 @@ const t = getDictionary(lang);
           href="/contact"
           class="px-6 py-3 rounded-full colors-cta shadow-sm transition"
         >
-          Prendre rendez-vous
+          {t.consultations.cta.button}
         </a>
 
         <a
           href="tel:+33XXXXXXXXX"
           class="px-6 py-3 rounded-full border border-zinc-300 hover:border-zinc-900 transition"
         >
-          Appeler
+          {t.consultations.cta.call}
         </a>
       </div>
     </div>

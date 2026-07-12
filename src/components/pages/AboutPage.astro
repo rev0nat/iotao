@@ -17,20 +17,18 @@ const t = getDictionary(lang);
     <!-- HERO -->
     <section class="section-main">
         <p class="text-sm tracking-widest uppercase text-zinc-500">
-        À propos
+        {t.about.hero.eyebrow}
         </p>
 
         <h1 class="mt-6 text-5xl md:text-6xl font-light tracking-tight leading-tight">
-        Une expertise au service du vivant.<br />
+        {t.about.hero.title}<br />
         <span class="font-normal text-zinc-700">
-            Dr Vet. Frédérique CLUSEL
+            {t.about.hero.subtitle}
         </span>
         </h1>
 
         <p class="mt-6 max-w-2xl mx-auto text-lg text-zinc-600">
-        Derrière chaque consultation se trouve une conviction : comprendre
-        l'animal dans sa globalité afin de lui apporter un accompagnement précis,
-        respectueux et personnalisé.
+        {t.about.hero.description}
         </p>
     </section>
 
@@ -51,30 +49,32 @@ const t = getDictionary(lang);
         <div>
 
             <p class="text-sm tracking-widest uppercase text-zinc-500 mb-4">
-            Mon parcours
+            {t.about.presentation.eyebrow}
             </p>
 
             <h2 class="text-4xl font-light tracking-tight">
-            Une passion pour la santé animale.
+            {t.about.presentation.title}
             </h2>
 
             <div class="mt-8 space-y-6 text-zinc-600 leading-8">
 
             <p>
-                Passionnée du règne animal et amoureuse du monde vivant, 
-                Frédérique devient vétérinaire et se spécialise en médecine aviaire. 
+                {t.about.presentation.paragraphs[0]}
             </p>
 
             <p>
-                Après quatre années en clinique vétérinaire, elle rejoint l’univers de la santé et nutrition animale, 
-                découvre le monde et ses cultures en voyageant professionnellement et en famille.
-                Trente ans d’expérience affinent son leadership, forgent ses compétences et aiguisent son sens des affaires.
+                {t.about.presentation.paragraphs[1]}
             </p>
 
             <p>       
-                Pour revenir à une pratique raisonnée de la médecine vétérinaire, 
-                elle se forme en médecine manuelle vétérinaire (« ostéopathie vétérinaire »).
-                Aujourd’hui, Frédérique consulte et soigne, animaux et entreprises.
+                {t.about.presentation.paragraphs[2]}
+            </p>
+
+                {t.about.presentation.paragraphs[3]}
+            </p>
+
+            <p>       
+                {t.about.presentation.paragraphs[4]}
             </p>
 
             </div>
@@ -87,75 +87,67 @@ const t = getDictionary(lang);
     <!-- VALUES -->
     <section class="section-main py-20">
         <p class="text-sm tracking-widest uppercase text-zinc-500">
-        Expertise
+        {t.about.expertise.eyebrow}
         </p>
         <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10 mt-6">
 
             <div class="cards-main">
             <h3 class="text-lg font-medium">
-                Formation
+                {t.about.expertise.cards[0].title}
             </h3>
 
             <p class="mt-3 text-sm text-zinc-600">
-                Docteur vétérinaire, Executive MBA et diplômé en ostéopathie vétérinaire.
+                {t.about.expertise.cards[0].description}
             </p>
             </div>
 
             <div class="cards-main">
             <h3 class="text-lg font-medium">
-                Lesaffre (2013–2023)
+                {t.about.expertise.cards[1].title}
             </h3>
 
             <p class="mt-3 text-sm text-zinc-600">
-                Membre du Comité Exécutif et dirigeant international. Pilotage de trois
-                divisions à l'échelle mondiale, croissance à deux chiffres, montée en
-                gamme des activités, lancement de plus de cinq innovations majeures et
-                renforcement de la stratégie RSE.
+                {t.about.expertise.cards[1].description}
             </p>
             </div>
 
             <div class="cards-main">
             <h3 class="text-lg font-medium">
-                Zoetis (2009–2013)
+                {t.about.expertise.cards[2].title}
             </h3>
 
             <p class="mt-3 text-sm text-zinc-600">
-                Directeur Groupe EAME et responsable Business Development. Relance de
-                l'activité avec un passage d'une décroissance de 5&nbsp;% à une croissance
-                de 12&nbsp;%.
+                {t.about.expertise.cards[2].description}
             </p>
             </div>
 
             <div class="cards-main">
             <h3 class="text-lg font-medium">
-                MSD (2003–2009)
+                {t.about.expertise.cards[3].title}
             </h3>
 
             <p class="mt-3 text-sm text-zinc-600">
-                Directeur de Business Unit en France puis en Malaisie. Doublement du
-                chiffre d'affaires à la suite de la fusion des activités.
+                {t.about.expertise.cards[3].description}
             </p>
             </div>
 
             <div class="cards-main">
             <h3 class="text-lg font-medium">
-                Ceva & Vétoquinol
+                {t.about.expertise.cards[4].title}
             </h3>
 
             <p class="mt-3 text-sm text-zinc-600">
-                Fonctions en marketing et affaires réglementaires en Europe et en Asie
-                du Sud-Est, au service du développement de la santé animale.
+                {t.about.expertise.cards[4].description}
             </p>
             </div>
 
             <div class="cards-main">
             <h3 class="text-lg font-medium">
-                Pratique vétérinaire
+                {t.about.expertise.cards[5].title}
             </h3>
 
             <p class="mt-3 text-sm text-zinc-600">
-                Exercice en médecine des animaux de compagnie et des oiseaux, complété
-                par une expertise en ostéopathie vétérinaire.
+                {t.about.expertise.cards[5].description}
             </p>
             </div>
 
@@ -167,9 +159,7 @@ const t = getDictionary(lang);
         <div class="max-w-3xl mx-auto px-6 text-center">
 
         <blockquote class="text-3xl font-light italic leading-relaxed text-zinc-800">
-            « Chaque animal mérite une attention particulière.
-            Mon rôle est de l'accompagner vers un meilleur équilibre avec douceur,
-            précision et respect. »
+            {t.about.quote}
         </blockquote>
 
         </div>

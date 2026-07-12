@@ -15,40 +15,40 @@ const t = getDictionary(lang);
     <section class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12">
         <!-- LEFT: FORM -->
         <div class="bg-white rounded-2xl p-8 shadow-sm bg-zinc-50">
-            <h2 class="text-2xl font-semibold mb-2">Contact</h2>
+            <h2 class="text-2xl font-semibold mb-2">{t.contact.form.title}</h2>
             <p class="text-sm text-zinc-600 mb-6">
-            Une question ? Une prise de rendez-vous ? Je vous réponds rapidement.
+            {t.contact.form.description}
             </p>
 
             <form class="flex flex-col gap-4">
                 <input
                     type="text"
-                    placeholder="Nom"
+                    placeholder={t.contact.form.fields.name}
                     class="w-full px-4 py-3 rounded-lg border border-zinc-200 focus:outline-none focus:ring-2 focus:ring-[#ffc47d]"
                 />
                 <input
                     type="email"
-                    placeholder="Email"
+                    placeholder={t.contact.form.fields.email}
                     class="w-full px-4 py-3 rounded-lg border border-zinc-200 focus:outline-none focus:ring-2 focus:ring-[#ffc47d]"
                 />
                 <input
                     type="text"
-                    placeholder="Sujet"
+                    placeholder={t.contact.form.fields.subject}
                     class="w-full px-4 py-3 rounded-lg border border-zinc-200 focus:outline-none focus:ring-2 focus:ring-[#ffc47d]"
                 />
                 <textarea
                     rows="5"
-                    placeholder="Votre message"
+                    placeholder={t.contact.form.fields.message}
                     class="w-full px-4 py-3 rounded-lg border border-zinc-200 focus:outline-none focus:ring-2 focus:ring-[#ffc47d]"
                 ></textarea>
                 <button
                     type="submit"
                     class="mt-2 bg-[#ffc001] text-white font-medium py-3 rounded-lg hover:bg-[#ff9933] transition"
                 >
-                    Envoyer
+                    {t.contact.form.button}
                 </button>
                 <p class="text-xs text-zinc-500 mt-2">
-                    Vos données restent confidentielles.
+                    {t.contact.form.confidentiality}
                 </p>
             </form>
         </div>
@@ -67,15 +67,15 @@ const t = getDictionary(lang);
                 </div>
 
                 <div class="bg-zinc-50 rounded-2xl p-6 shadow-sm">
-                <h3 class="font-semibold mb-2">Où me trouver</h3>
+                <h3 class="font-semibold mb-2">{t.contact.location.title}</h3>
                 <p class="text-sm text-zinc-600">
-                    Betbèze (65), Hautes-Pyrénées<br />
-                    Consultations sur rendez-vous
+                    {t.contact.location.address[0]}<br />
+                    {t.contact.location.address[1]}
                 </p>
 
                 <div class="mt-4 text-sm">
-                    <p class="font-medium">Horaires</p>
-                    <p class="text-zinc-600">Lun - Sam : 9h - 18h</p>
+                    <p class="font-medium">{t.contact.hours.title}</p>
+                    <p class="text-zinc-600">{t.contact.hours.schedule}</p>
                 </div>
             </div>
 

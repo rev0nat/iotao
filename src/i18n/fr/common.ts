@@ -12,11 +12,11 @@ export default {
     },
     consulting: {
       label: "Conseil",
-      href: "/conseil",
+      href: "/consulting",
     },
     about: {
       label: "À propos",
-      href: "/a-propos",
+      href: "/about",
     },
     contact: {
       label: "Contact",
