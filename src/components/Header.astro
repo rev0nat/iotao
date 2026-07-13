@@ -9,65 +9,128 @@ interface Props {
 const { lang } = Astro.props as Props;
 
 const t = lang === "fr" ? frCommon : enCommon;
----
 
+const frenchPath = Astro.url.pathname.replace(/^\/en/, "") || "/";
+const englishPath = `/en${Astro.url.pathname === "/" ? "" : Astro.url.pathname}`;
+---
 
 <header class="w-full py-4 px-4 bg-white relative">
   <div class="max-w-6xl mx-auto flex justify-between items-center">
 
     <!-- Logo -->
     <div class="image">
-        <a href={t.nav.home.href}>
-            <img src="/images/ioato.png" alt="logo" class="h-8 w-auto">
-        </a>
+      <a href={t.nav.home.href}>
+        <img src="/images/ioato.png" alt="Iotao logo" class="h-8 w-auto">
+      </a>
     </div>
+
 
     <!-- Desktop nav -->
     <nav class="hidden md:flex items-center gap-10 text-base font-medium text-zinc-800">
-      <a href={t.nav.consultations.href} class="hover:text-[#ff9933] transition">
+
+      <a href={t.nav.consultations.href}
+         class="hover:text-[#ff9933] transition">
         {t.nav.consultations.label}
       </a>
-      <a href={t.nav.consulting.href} class="hover:text-[#ff9933] transition">
+
+      <a href={t.nav.consulting.href}
+         class="hover:text-[#ff9933] transition">
         {t.nav.consulting.label}
       </a>
-      <a href={t.nav.about.href} class="hover:text-[#ff9933] transition">
+
+      <a href={t.nav.about.href}
+         class="hover:text-[#ff9933] transition">
         {t.nav.about.label}
       </a>
+
     </nav>
 
-    <!-- CTA + burger -->
+
+    <!-- CTA + language + burger -->
     <div class="flex items-center gap-3">
 
-      <a href="/contact"
-         class="text-sm px-5 py-2 rounded-full bg-[#ffc001] text-white font-medium hover:bg-[#ff9933] transition">
-        Contact
+      <!-- Language switch -->
+      {
+        lang === "fr" ? (
+          <a
+            href={englishPath}
+            class="relative flex items-center justify-center w-8 h-8 rounded-full overflow-hidden hover:scale-105 transition"
+            aria-label="English version"
+          >
+            <span class="absolute inset-0 bg-white border border-zinc-200"></span>
+            <span class="relative z-10 text-lg">
+              🇬🇧
+            </span>
+          </a>
+        ) : (
+          <a
+            href={frenchPath}
+            class="relative flex items-center justify-center w-8 h-8 rounded-full overflow-hidden hover:scale-105 transition"
+            aria-label="Version française"
+          >
+            <span class="absolute inset-0 bg-white border border-zinc-200"></span>
+            <span class="relative z-10 text-lg">
+              🇫🇷
+            </span>
+          </a>
+        )
+      }
+
+
+      <!-- CTA -->
+      <a
+        href={t.nav.contact.href}
+        class="text-sm px-5 py-2 rounded-full bg-[#ffc001] text-white font-medium hover:bg-[#ff9933] transition"
+      >
+        {t.nav.contact.label}
       </a>
 
+
       <!-- Burger button -->
-      <button id="menu-btn" class="md:hidden flex flex-col gap-1">
+      <button
+        id="menu-btn"
+        class="md:hidden flex flex-col gap-1"
+        aria-label="Menu"
+      >
         <span class="w-6 h-0.5 bg-zinc-800"></span>
         <span class="w-6 h-0.5 bg-zinc-800"></span>
         <span class="w-6 h-0.5 bg-zinc-800"></span>
       </button>
 
     </div>
+
   </div>
+
 
   <!-- Mobile menu -->
   <div id="mobile-menu" class="hidden md:hidden px-4 pt-4 pb-6">
+
     <nav class="flex flex-col gap-4 text-base font-medium text-zinc-800">
-      <a href="/prestations">{t.nav.consultations.label}</a>
-      <a href="/conseil">{t.nav.consulting.label}</a>
-      <a href="/a-propos">{t.nav.about.label}</a>
+
+      <a href={t.nav.consultations.href}>
+        {t.nav.consultations.label}
+      </a>
+
+      <a href={t.nav.consulting.href}>
+        {t.nav.consulting.label}
+      </a>
+
+      <a href={t.nav.about.href}>
+        {t.nav.about.label}
+      </a>
+
     </nav>
+
   </div>
+
 
   <script>
     const btn = document.getElementById("menu-btn");
     const menu = document.getElementById("mobile-menu");
 
-    btn.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
+    btn?.addEventListener("click", () => {
+      menu?.classList.toggle("hidden");
     });
   </script>
+
 </header>
