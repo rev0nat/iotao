@@ -20,23 +20,27 @@ const t = getDictionary(lang);
             {t.contact.form.description}
             </p>
 
-            <form class="flex flex-col gap-4">
+            <form action="/api/contact" method="POST" class="flex flex-col gap-4">
                 <input
+                    name="name"
                     type="text"
                     placeholder={t.contact.form.fields.name}
                     class="w-full px-4 py-3 rounded-lg border border-zinc-200 focus:outline-none focus:ring-2 focus:ring-[#ffc47d]"
                 />
                 <input
+                    name="email"
                     type="email"
                     placeholder={t.contact.form.fields.email}
                     class="w-full px-4 py-3 rounded-lg border border-zinc-200 focus:outline-none focus:ring-2 focus:ring-[#ffc47d]"
                 />
                 <input
+                    name="subject"
                     type="text"
                     placeholder={t.contact.form.fields.subject}
                     class="w-full px-4 py-3 rounded-lg border border-zinc-200 focus:outline-none focus:ring-2 focus:ring-[#ffc47d]"
                 />
                 <textarea
+                    name="message"
                     rows="5"
                     placeholder={t.contact.form.fields.message}
                     class="w-full px-4 py-3 rounded-lg border border-zinc-200 focus:outline-none focus:ring-2 focus:ring-[#ffc47d]"
