@@ -1,5 +1,5 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro"
+import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getDictionary } from "../../i18n";
 
 interface Props {
@@ -14,7 +14,7 @@ const t = getDictionary(lang);
 <BaseLayout lang={lang}>
 
     <!-- HERO -->
-    <section class="section-main section-fur">
+    <section class="section-main section-paw-mark">
       <p class="text-sm tracking-widest text-zinc-500 uppercase">
         {t.home.hero.location}
       </p>
@@ -42,7 +42,7 @@ const t = getDictionary(lang);
     </section>
 
     <!-- RASSURANCE -->
-    <section class="py-20 bg-white border-y border-zinc-100">
+    <section class="section-main-white">
       <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10 text-center">
 
         <div class="cards-main">
@@ -70,7 +70,7 @@ const t = getDictionary(lang);
     </section>
 
     <!-- IOATO -->
-    <section class="py-24 max-w-6xl mx-auto px-6 section-organic">
+    <section class="py-24 max-w-6xl mx-auto px-6 section-paw-mark">
       <h2 class="text-center text-3xl font-light mb-12">
         {t.home.iotao.title}
       </h2>
@@ -132,7 +132,7 @@ const t = getDictionary(lang);
 
     
     <!-- DOUBLE EXPERTISE -->
-    <section class="py-24 px-6">
+    <section class="section-main section-paw-mark">
       <h2 class="text-center text-3xl font-light mb-12">
         {t.home.experience.title}
       </h2>

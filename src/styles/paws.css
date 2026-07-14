@@ -1,0 +1,32 @@
+.section-paw-mark {
+    @apply relative;
+}
+
+.section-paw-mark::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 24px;
+
+    width: 28px;
+    height: 28px;
+
+    background-image: url("/images/paw.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    opacity: 0;
+    transform: rotate(-20deg) scale(0.8);
+
+    transition:
+        opacity 700ms ease,
+        transform 700ms ease;
+
+    pointer-events: none;
+}
+
+
+.section-paw-mark.is-visible::before {
+    opacity: 0.25;
+    transform: rotate(-20deg) scale(1);
+}
