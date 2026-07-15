@@ -4,7 +4,7 @@ export default {
   hero: {
     eyebrow: "About",
     title: "Expertise dedicated to living beings.",
-    subtitle: "Veterinarian Dr. Frédérique CLUSEL",
+    subtitle: "Dr. of Vet medicineFrédérique CLUSEL",
     description:
       "Behind every consultation lies the same conviction: understanding the animal as a whole in order to provide precise, respectful and personalized care.",
   },
@@ -30,38 +30,52 @@ export default {
     cards: [
       {
         title: "Education",
-        description:
-          "Doctor of Veterinary Medicine, Executive MBA and postgraduate qualification in Veterinary Osteopathy.",
+        description: [
+          "Doctor of Veterinary Medicine",
+          "Executive MBA",
+          "Postgraduate qualification in Veterinary Osteopathy",
+        ],
       },
 
       {
-        title: "Lesaffre (2013–2023)",
-        description:
-          "Executive Committee member and international executive. Led three global business divisions, delivered sustained double-digit growth, drove premiumization strategies, launched more than five major innovations and strengthened CSR initiatives.",
+        title: "Lesaffre",
+        description: [
+          "Executive Committee member and international executive.",
+          "Led three global business divisions.",
+          "Delivered sustained double-digit growth, drove premiumization strategies, launched more than five major innovations and strengthened CSR initiatives.",
+        ],
       },
 
       {
-        title: "Zoetis (2009–2013)",
-        description:
-          "EAME Group Director and Business Development Lead. Turned a 5% decline into 12% growth through strategic business development.",
+        title: "Zoetis",
+        description: [
+          "EAME Group Director and Business Development Lead.",
+          "Turned a 5% decline into 12% growth through strategic business development.",
+        ],
       },
 
       {
-        title: "MSD (2003–2009)",
-        description:
-          "Business Unit Director in France and Malaysia. Successfully doubled revenue following the integration of merged activities.",
+        title: "MSD",
+        description: [
+          "Business Unit Director in France and Malaysia.",
+          "Successfully doubled revenue following the integration of merged activities.",
+        ],
       },
 
       {
         title: "Ceva & Vétoquinol",
-        description:
-          "Held marketing and regulatory affairs positions across Europe and Southeast Asia, contributing to the development of animal health solutions.",
+        description: [
+          "Marketing and regulatory affairs roles across Europe and Southeast Asia.",
+          "Contributed to the development of animal health solutions.",
+        ],
       },
 
       {
         title: "Veterinary Practice",
-        description:
-          "Clinical practice focused on companion animals and birds, complemented by expertise in Veterinary Manual Medicine.",
+        description: [
+          "Clinical practice focused on companion animals and birds.",
+          "Complemented by expertise in Veterinary Manual Medicine.",
+        ],
       },
     ],
   },

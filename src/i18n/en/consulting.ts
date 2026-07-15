@@ -40,7 +40,7 @@ export default {
       },
 
       {
-        title: "Preventive medicine",
+        title: "Expertise",
         items: [
           "• International development",
           "• Growth strategy",
@@ -65,7 +65,7 @@ export default {
     cards: [
       {
         title: "Audit & consulting",
-        price: "From €350",
+        price: "Quotation upon request",
         description:
           "Analysis of your needs, recommendations and support throughout your development projects.",
         items: [
@@ -77,7 +77,7 @@ export default {
 
       {
         title: "Training",
-        price: "Upon request",
+        price: "Quotation upon request",
         description:
           "Training sessions adapted to your teams and your company's objectives.",
         items: [
@@ -88,8 +88,8 @@ export default {
       },
 
       {
-        title: "Clinical expertise",
-        price: "Upon request",
+        title: "Veterinary expertise",
+        price: "Quotation upon request",
         description:
           "Occasional or ongoing support for specific technical or clinical challenges.",
         items: [
@@ -101,7 +101,7 @@ export default {
 
       {
         title: "Project support",
-        price: "Upon request",
+        price: "Quotation upon request",
         description:
           "Contribution to the development of projects in animal health, innovation or business strategy.",
         items: [
@@ -114,9 +114,9 @@ export default {
   },
 
   cta: {
-    title: "A project to discuss?",
+    title: "Your project is unique.",
     description:
-      "Since every collaboration is unique, feel free to contact me to discuss your needs and receive a tailored proposal.",
+      "Feel free to contact me to discuss your needs.",
     primaryButton: "Request a quote",
     secondaryButton: "Send an email",
   },

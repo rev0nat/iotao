@@ -53,61 +53,6 @@ export default {
     ],
   },
 
-  services: {
-    cards: [
-      {
-        title: "Dog consultation",
-        price: "€65",
-        description:
-          "Comprehensive consultation including history taking, observation, manual examination and individualized treatment.",
-        items: [
-          "Complete musculoskeletal assessment",
-          "Gentle, targeted techniques",
-          "Personalized advice",
-          "Duration: approximately 45–60 minutes",
-        ],
-      },
-
-      {
-        title: "Cat consultation",
-        price: "€60",
-        description:
-          "Comprehensive assessment tailored to the cat's behaviour and specific needs.",
-        items: [
-          "General examination",
-          "Manual treatment",
-          "Follow-up recommendations",
-          "Duration: 45 minutes",
-        ],
-      },
-
-      {
-        title: "Horse consultation",
-        price: "€90",
-        description:
-          "Comprehensive functional assessment taking into account the horse's activity, performance and medical history.",
-        items: [
-          "Static and dynamic evaluation",
-          "Manual treatment",
-          "Return-to-work recommendations",
-          "Duration: 1 hour",
-        ],
-      },
-
-      {
-        title: "Travel",
-        price: "Quotation",
-        description:
-          "Travel fees may apply depending on the distance. Whenever possible, appointments are grouped within the same geographical area.",
-        items: [
-          "Home visits",
-          "Stables and equestrian facilities",
-          "Grouped appointments available",
-        ],
-      },
-    ],
-  },
-
   cta: {
     title: "Do you have a question before booking an appointment?",
     description:

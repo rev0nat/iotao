@@ -8,6 +8,14 @@
     @apply mx-auto px-6 py-24 text-center bg-white;
 }
 
+.section-main-white-text-left {
+    @apply mx-auto px-6 py-24 text-left bg-white;
+}
+
+.section-main-text-left {
+    @apply mx-auto px-6 py-24 text-left max-w-6xl;
+}
+
 .colors-cta{
     @apply bg-[#ffc001] text-white hover:bg-[#ff9933] transition;
 }

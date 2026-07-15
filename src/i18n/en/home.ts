@@ -87,7 +87,7 @@ export default {
   },
 
   cta: {
-    title: "Does your animal need relief?",
+    title: "Does your animal need care?",
     contact: "Contact me",
     call: "Call",
   },

@@ -17,16 +17,14 @@ const t = getDictionary(lang);
 <main class="text-zinc-900">
 
   <!-- HERO -->
-  <section class="section-main">
+  <section class="section-main section-paw-mark">
     <p class="text-sm tracking-widest uppercase text-zinc-500">
       {t.consultations.hero.eyebrow}
     </p>
 
     <h1 class="mt-6 text-5xl md:text-6xl font-light tracking-tight leading-tight">
-      {t.consultations.hero.title}<br />
-      <span class="font-normal text-zinc-700">
-        {t.consultations.hero.subtitle}
-      </span>
+      <span class="font-normal text-zinc-700">{t.consultations.hero.title}<br /></span>
+      <span class="font-normal text-zinc-700">{t.consultations.hero.subtitle}</span>
     </h1>
 
     <p class="mt-6 max-w-2xl mx-auto text-lg text-zinc-600">
@@ -34,7 +32,7 @@ const t = getDictionary(lang);
     </p>
   </section>
 
-  <section class="py-20 border-y border-zinc-100 bg-white">
+  <section class="section-main-white-text-left">
     <div class="max-w-6xl mx-auto px-6 grid gap-8 md:grid-cols-2">
 
       <!-- Service -->
@@ -107,110 +105,8 @@ const t = getDictionary(lang);
     </div>
   </section>
 
-  <!-- SERVICES -->
-  <section class="py-20 border-y border-zinc-100">
-    <div class="max-w-6xl mx-auto px-6 grid gap-8 md:grid-cols-2">
-
-      <!-- Service -->
-      <div class="cards-main">
-        <div class="flex justify-between items-start gap-6">
-          <h2 class="text-2xl font-medium">
-            {t.consultations.services.cards[0].title}
-          </h2>
-
-          <span class="text-2xl font-light whitespace-nowrap">
-            {t.consultations.services.cards[0].price}
-          </span>
-        </div>
-
-        <p class="mt-4 text-zinc-600">
-          {t.consultations.services.cards[0].description}
-        </p>
-
-        <div class="mt-6 space-y-2 text-sm text-zinc-600">
-          <p>{t.consultations.services.cards[0].items[0]}</p>
-          <p>{t.consultations.services.cards[0].items[1]}</p>
-          <p>{t.consultations.services.cards[0].items[2]}</p>
-          <p>{t.consultations.services.cards[0].items[3]}</p>
-        </div>
-      </div>
-
-      <!-- Service -->
-      <div class="cards-main">
-        <div class="flex justify-between items-start gap-6">
-          <h2 class="text-2xl font-medium">
-            {t.consultations.services.cards[1].title}
-          </h2>
-
-          <span class="text-2xl font-light whitespace-nowrap">
-            {t.consultations.services.cards[1].price}
-          </span>
-        </div>
-
-        <p class="mt-4 text-zinc-600">
-          {t.consultations.services.cards[1].description}
-        </p>
-
-        <div class="mt-6 space-y-2 text-sm text-zinc-600">
-          <p>{t.consultations.services.cards[1].items[0]}</p>
-          <p>{t.consultations.services.cards[1].items[1]}</p>
-          <p>{t.consultations.services.cards[1].items[2]}</p>
-          <p>{t.consultations.services.cards[1].items[3]}</p>
-        </div>
-      </div>
-
-      <!-- Service -->
-      <div class="cards-main">
-        <div class="flex justify-between items-start gap-6">
-          <h2 class="text-2xl font-medium">
-            {t.consultations.services.cards[2].title}
-          </h2>
-
-          <span class="text-2xl font-light whitespace-nowrap">
-            {t.consultations.services.cards[2].price}
-          </span>
-        </div>
-
-        <p class="mt-4 text-zinc-600">
-          {t.consultations.services.cards[2].description}
-        </p>
-
-        <div class="mt-6 space-y-2 text-sm text-zinc-600">
-          <p>{t.consultations.services.cards[2].items[0]}</p>
-          <p>{t.consultations.services.cards[2].items[1]}</p>
-          <p>{t.consultations.services.cards[2].items[2]}</p>
-          <p>{t.consultations.services.cards[2].items[3]}</p>
-        </div>
-      </div>
-
-      <!-- Service -->
-      <div class="cards-main">
-        <div class="flex justify-between items-start gap-6">
-          <h2 class="text-2xl font-medium">
-            {t.consultations.services.cards[3].title}
-          </h2>
-
-          <span class="text-2xl font-light whitespace-nowrap">
-            {t.consultations.services.cards[3].price}
-          </span>
-        </div>
-
-        <p class="mt-4 text-zinc-600">
-          {t.consultations.services.cards[3].description}
-        </p>
-
-        <div class="mt-6 space-y-2 text-sm text-zinc-600">
-          <p>{t.consultations.services.cards[3].items[0]}</p>
-          <p>{t.consultations.services.cards[3].items[1]}</p>
-          <p>{t.consultations.services.cards[3].items[2]}</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
   <!-- CTA -->
-  <section class="py-24 bg-white border-y border-zinc-100">
+  <section class="section-main">
     <div class="max-w-3xl mx-auto text-center px-6">
       <h2 class="text-4xl font-light">
         {t.consultations.cta.title}

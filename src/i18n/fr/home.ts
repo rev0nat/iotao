@@ -35,7 +35,7 @@ export default {
     iota: {
       title: "Iota",
       description:
-        "Iota évoque l'attention portée au détail, à ce qui est presque invisible. En français, l'expression « ne pas changer d'un iota » rappelle qu'un infime détail peut parfois faire toute la différence.",
+        "Iota évoque l'attention portée au détail, à ce qui est presque invisible. En français, l'expression « bouger d'un iota » rappelle qu'un infime détail peut parfois faire toute la différence.",
     },
 
     tao: {
@@ -87,7 +87,7 @@ export default {
   },
 
   cta: {
-    title: "Un animal à soulager ?",
+    title: "Un animal à soigner ?",
     contact: "Me contacter",
     call: "Appeler",
   },

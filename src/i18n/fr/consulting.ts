@@ -40,7 +40,7 @@ export default {
       },
 
       {
-        title: "Médecine préventive",
+        title: "Expertise",
         items: [
           "• Développement international",
           "• Croissance",
@@ -65,7 +65,7 @@ export default {
     cards: [
       {
         title: "Audit & conseil",
-        price: "À partir de 350 €",
+        price: "Sur devis",
         description:
           "Analyse de vos besoins, recommandations et accompagnement dans vos projets de développement.",
         items: [
@@ -88,7 +88,7 @@ export default {
       },
 
       {
-        title: "Expertise clinique",
+        title: "Expertise vétérinaire",
         price: "Sur devis",
         description:
           "Accompagnement ponctuel ou régulier sur des problématiques techniques ou cliniques spécifiques.",
@@ -114,9 +114,9 @@ export default {
   },
 
   cta: {
-    title: "Un projet à discuter ?",
+    title: "Votre projet est unique.",
     description:
-      "Chaque collaboration étant unique, n'hésitez pas à me contacter afin d'échanger sur vos besoins et obtenir un devis personnalisé.",
+      "N'hésitez pas à me contacter afin d'échanger sur vos besoins.",
     primaryButton: "Demander un devis",
     secondaryButton: "Envoyer un e-mail",
   },

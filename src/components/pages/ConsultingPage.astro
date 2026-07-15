@@ -15,16 +15,14 @@ const t = getDictionary(lang);
     <main class="text-zinc-900">
 
     <!-- HERO -->
-    <section class="section-main">
+    <section class="section-main section-paw-mark">
         <p class="text-sm tracking-widest uppercase text-zinc-500">
         {t.consulting.hero.eyebrow}
         </p>
 
         <h1 class="mt-6 text-5xl md:text-6xl font-light tracking-tight leading-tight">
-        {t.consulting.hero.title}<br />
-        <span class="font-normal text-zinc-700">
-            {t.consulting.hero.subtitle}
-        </span>
+        <span class="font-normal text-zinc-700">{t.consulting.hero.title}</span><br />
+        <span class="font-normal text-zinc-700">{t.consulting.hero.subtitle}</span>
         </h1>
 
         <p class="mt-6 max-w-2xl mx-auto text-lg text-zinc-600">
@@ -33,7 +31,7 @@ const t = getDictionary(lang);
     </section>
 
     <!-- PRESENTATION -->
-    <section class="py-24 bg-white border-y border-zinc-100">
+    <section class="section-main-white-text-left">
         <div class="max-w-4xl mx-auto px-6 text-center">
 
             <p class="text-sm tracking-widest uppercase text-zinc-500">
@@ -65,7 +63,7 @@ const t = getDictionary(lang);
         </section>
 
     <!-- DOMAINES D'INTERVENTION -->
-    <section class="py-20">
+    <section class="section-main-text-left section-paw-mark">
         <div class="max-w-6xl mx-auto px-6 grid gap-8 md:grid-cols-2">
 
             <!-- Card -->
@@ -128,7 +126,7 @@ const t = getDictionary(lang);
     
 
     <!-- DETAILS PRESTATIONS -->
-    <section class="py-20 bg-white border-y border-zinc-100">
+    <section class="section-main-white-text-left">
         <div class="max-w-6xl mx-auto px-6 grid gap-8 md:grid-cols-2">
 
         <!-- Card -->
@@ -227,7 +225,7 @@ const t = getDictionary(lang);
     </section>
 
     <!-- CTA -->
-    <section class="py-20">
+    <section class="section-main section-paw-mark">
         <div class="max-w-3xl mx-auto px-6 text-center">
 
         <h2 class="text-4xl font-light">
@@ -239,13 +237,6 @@ const t = getDictionary(lang);
         </p>
 
         <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-
-            <a
-            href="/contact"
-            class="px-6 py-3 rounded-full colors-cta transition shadow-sm"
-            >
-            {t.consulting.cta.primaryButton}
-            </a>
 
             <a
             href="mailto:contact@votresite.fr"

@@ -53,61 +53,6 @@ export default {
     ],
   },
 
-  services: {
-    cards: [
-      {
-        title: "Consultation chien",
-        price: "65 €",
-        description:
-          "Consultation complète comprenant l'anamnèse, l'observation, l'examen ostéopathique et le traitement adapté.",
-        items: [
-          "Bilan locomoteur complet",
-          "Manipulations douces et ciblées",
-          "Conseils personnalisés",
-          "Durée : environ 45 à 60 min",
-        ],
-      },
-
-      {
-        title: "Consultation chat",
-        price: "60 €",
-        description:
-          "Évaluation complète adaptée au comportement et aux besoins du chat.",
-        items: [
-          "Examen global",
-          "Traitement ostéopathique",
-          "Conseils de suivi",
-          "Durée : 45 min",
-        ],
-      },
-
-      {
-        title: "Consultation cheval",
-        price: "90 €",
-        description:
-          "Bilan fonctionnel complet du cheval, en tenant compte de son activité et de son historique.",
-        items: [
-          "Analyse statique et dynamique",
-          "Traitement ostéopathique",
-          "Conseils pour la reprise du travail",
-          "Durée : 1 h",
-        ],
-      },
-
-      {
-        title: "Déplacement",
-        price: "Sur devis",
-        description:
-          "Les frais de déplacement peuvent s'ajouter selon la distance. Les tournées sont privilégiées lorsque plusieurs animaux sont consultés dans un même secteur.",
-        items: [
-          "Déplacement à domicile",
-          "Écuries et pensions",
-          "Regroupement de rendez-vous possible",
-        ],
-      },
-    ],
-  },
-
   cta: {
     title: "Une question avant de prendre rendez-vous ?",
     description:
