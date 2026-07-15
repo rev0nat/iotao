@@ -17,7 +17,7 @@
 }
 
 .colors-cta{
-    @apply bg-[#ffc001] text-white hover:bg-[#ff9933] transition;
+    @apply bg-[#2b2118] text-white hover:bg-[#ff9933] transition;
 }
 
 .cards-main{
