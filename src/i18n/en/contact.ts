@@ -7,6 +7,7 @@ export default {
     fields: {
       name: "Name",
       email: "Email",
+      phone: "Phone",
       subject: "Subject",
       message: "Your message",
     },

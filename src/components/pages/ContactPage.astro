@@ -34,10 +34,17 @@ const t = getDictionary(lang);
                     class="w-full px-4 py-3 rounded-lg border border-zinc-200 focus:outline-none focus:ring-2 focus:ring-[#ffc47d]"
                 />
                 <input
+                    name="phone"
+                    type="tel"
+                    placeholder={t.contact.form.fields.phone}
+                    class="w-full px-4 py-3 rounded-lg border border-zinc-200 focus:outline-none focus:ring-2 focus:ring-[#ffc47d]"
+                />
+                <input
                     name="subject"
                     type="text"
                     placeholder={t.contact.form.fields.subject}
                     class="w-full px-4 py-3 rounded-lg border border-zinc-200 focus:outline-none focus:ring-2 focus:ring-[#ffc47d]"
+                
                 />
                 <textarea
                     name="message"
@@ -61,7 +68,7 @@ const t = getDictionary(lang);
         <div class="flex flex-col gap-6">
 
             <div class="bg-zinc-50 rounded-2xl overflow-hidden shadow-sm">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d986739.7841425833!2d-0.3383914185751206!3d43.143824359243496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a9a9cce9505757%3A0x8cd734e26416c2d8!2s2%20Chem.%20des%20Goutilles%2C%2065230%20Betb%C3%A8ze%2C%20France!5e0!3m2!1sfr!2ses!4v1782506812410!5m2!1sfr!2ses"
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1129182.743002559!2d-0.2963802899918518!3d43.2645590802363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a9a85315d121b1%3A0x406f69c2f3d8850!2s65230%20Betb%C3%A8ze%2C%20France!5e0!3m2!1sfr!2sno!4v1784142527108!5m2!1sfr!2sno"
                     width="100%"
                     height="320"
                     style="border:0;"
@@ -82,8 +89,6 @@ const t = getDictionary(lang);
                     <p class="text-zinc-600">{t.contact.hours.schedule}</p>
                 </div>
             </div>
-
         </div>
-
-        </section>
+    </section>
 </BaseLayout>
