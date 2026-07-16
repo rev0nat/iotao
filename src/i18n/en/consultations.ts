@@ -1,4 +1,9 @@
 export default {
+  seo: {
+    title: "Consultations",
+    description:
+      "Veterinary Manual Medicine is a complementary discipline to general veterinary practice, based on clinical examination, palpation and an understanding of the animal's functional balance.",
+  },
   hero: {
     eyebrow: "Consultations",
     title: "Tailored care.",

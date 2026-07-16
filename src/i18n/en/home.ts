@@ -1,4 +1,9 @@
 export default {
+  seo: {
+    title: "Iotao - Veterinary Manual Medicine and Animal Health Consulting",
+    description:
+      "I support animals, their owners and animal health companies with the same commitment: observe, understand and act with precision.",
+  },
   hero: {
     location: "Betbèze · Hautes-Pyrénées",
     title: "The precision of touch.",

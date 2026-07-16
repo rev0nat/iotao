@@ -17,7 +17,14 @@
 }
 
 .colors-cta{
-    @apply bg-[#2b2118] text-white hover:bg-[#ff9933] transition;
+    @apply bg-[#2b2118] text-white border border-transparent transition-all duration-300;
+}
+
+.colors-cta:hover{
+    @apply -translate-y-0.5;
+    box-shadow:
+        0 12px 24px rgba(43,33,24,.18),
+        0 2px 6px rgba(43,33,24,.12);
 }
 
 .cards-main{

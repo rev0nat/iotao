@@ -1,6 +1,11 @@
 // src/i18n/en/about.ts
 
 export default {
+  seo: {
+    title: "About",
+    description:
+      "Behind every consultation lies the same conviction: understanding the animal as a whole in order to provide precise, respectful and personalized care.",
+  },
   hero: {
     eyebrow: "About",
     title: "Expertise dedicated to living beings.",

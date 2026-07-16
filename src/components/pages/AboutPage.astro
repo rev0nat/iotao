@@ -11,7 +11,7 @@ const { lang } = Astro.props;
 const t = getDictionary(lang);
 ---
 
-<BaseLayout lang={lang}>
+<BaseLayout lang={lang} title={t.about.seo.title} description={t.about.seo.description}>
     <main class="text-zinc-900">
 
     <!-- HERO -->

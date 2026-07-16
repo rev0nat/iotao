@@ -1,4 +1,9 @@
 export default {
+  seo: {
+    title: "Consultations",
+    description:
+      "La médecine manuelle vétérinaire est une approche complémentaire de la médecine générale vétérinaire qui s'appuie sur l'examen clinique, le toucher et la compréhension des équilibres fonctionnels de l'animal.",
+  },
   hero: {
     eyebrow: "Consultations",
     title: "Des soins adaptés.",

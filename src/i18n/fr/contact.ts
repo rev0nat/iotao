@@ -1,4 +1,9 @@
 export default {
+  seo: {
+    title: "Contact",
+    description:
+      "Une question ? Une prise de rendez-vous ? Je vous réponds rapidement.",
+  },
   form: {
     title: "Contact",
     description:

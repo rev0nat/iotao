@@ -5,9 +5,13 @@ import Header from "../components/Header.astro";
 
 interface Props {
   lang: "fr" | "en";
+  title: string;
+  description: string;
 }
 
-const { lang } = Astro.props as Props;
+const { lang, title, description } = Astro.props as Props;
+const site = "https://iotao.fr";
+const canonical = new URL(Astro.url.pathname, site).toString();
 ---
 
 <html lang="fr">
@@ -17,6 +21,18 @@ const { lang } = Astro.props as Props;
 
     <title>Ostéopathe animale à Betbèze (65)</title>
     <script>import "../scripts/sectionPaws.js";</script>
+
+    <title>{title}</title>
+
+    <meta name="description" content={description} />
+
+    <link rel="canonical" href={canonical} />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={`${site}/images/og-image.jpg`} />
   </head>
 
   <body class="bg-[#ff9933] text-[#2b2118] antialiased">

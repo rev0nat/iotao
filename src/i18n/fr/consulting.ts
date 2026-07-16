@@ -1,4 +1,9 @@
 export default {
+  seo: {
+    title: "Conseil",
+    description:
+      "J'accompagne les entreprises qui développent des solutions en santé, nutrition et bien-être animal.",
+  },
   hero: {
     eyebrow: "Conseil",
     title: "Conseil en santé animale",

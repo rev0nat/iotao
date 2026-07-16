@@ -1,4 +1,9 @@
 export default {
+  seo: {
+    title: "À propos",
+    description:
+      "Derrière chaque consultation se trouve une conviction : comprendre l'animal dans sa globalité afin de lui apporter un accompagnement précis, respectueux et personnalisé.",
+  },
   hero: {
     eyebrow: "À propos",
     title: "Une expertise au service du vivant.",

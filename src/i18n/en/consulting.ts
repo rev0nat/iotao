@@ -1,4 +1,9 @@
 export default {
+  seo: {
+    title: "Consulting",
+    description:
+      "I support companies developing solutions in animal health, nutrition and animal welfare.",
+  },
   hero: {
     eyebrow: "Consulting",
     title: "Animal Health Consulting",

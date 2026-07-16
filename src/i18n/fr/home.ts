@@ -1,4 +1,9 @@
 export default {
+  seo: {
+    title: "Iotao - Médecine manuelle vétérinaire et conseil en santé animale",
+    description:
+      "J'accompagne les animaux, leurs propriétaires et les entreprises de la santé animale avec une même exigence : observer, comprendre et agir avec précision.",
+  },
   hero: {
     location: "Betbèze · Hautes-Pyrénées",
     title: "La précision du geste.",

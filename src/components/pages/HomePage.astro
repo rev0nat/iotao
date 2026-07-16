@@ -11,7 +11,7 @@ const { lang } = Astro.props;
 const t = getDictionary(lang);
 ---
 
-<BaseLayout lang={lang}>
+<BaseLayout lang={lang} title={t.home.seo.title} description={t.home.seo.description}>
 
     <!-- HERO -->
     <section class="section-main section-paw-mark">
