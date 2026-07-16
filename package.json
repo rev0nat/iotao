@@ -7,8 +7,8 @@
     "preview": "astro preview --host"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.7.3",
-    "astro": "^4.0.0"
+    "@astrojs/sitemap": "3.2.1",
+    "astro": "4.16.19"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.0.0",

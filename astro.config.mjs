@@ -5,11 +5,12 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://iotao.fr",
 
-  vite: {
-    plugins: [tailwindcss()],
-  },
 
   integrations: [
     sitemap(),
   ],
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
