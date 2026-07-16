@@ -15,7 +15,7 @@ export default {
   },
 
   presentation: {
-    image: "/images/frede.png",
+    image: "/images/frederique-clusel-veterinaire.webp",
 
     eyebrow: "My journey",
     title: "A lifelong passion for animal health.",

@@ -5,6 +5,7 @@ export default {
     home: {
       label: "Home",
       href: "/en",
+      image: "/images/iotao-logo.webp",
     },
     consultations: {
       label: "Consultations",

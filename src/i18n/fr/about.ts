@@ -13,6 +13,7 @@ export default {
   },
 
   presentation: {
+    image: "/images/frederique-clusel-veterinaire.webp",
     eyebrow: "Mon parcours",
     title: "Une passion pour la santé animale.",
 

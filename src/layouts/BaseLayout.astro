@@ -12,6 +12,33 @@ interface Props {
 const { lang, title, description } = Astro.props as Props;
 const site = "https://iotao.fr";
 const canonical = new URL(Astro.url.pathname, site).toString();
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "VeterinaryCare",
+  "name": "Iotao",
+  "url": site,
+  "logo": `${site}/images/ioato.png`,
+  "description": description,
+
+  "founder": {
+    "@type": "Person",
+    "name": "Dr. Frédérique Clusel",
+    "jobTitle": "Docteur vétérinaire",
+    "knowsAbout": [
+      "Médecine manuelle vétérinaire",
+      "Ostéopathie vétérinaire",
+      "Santé animale",
+      "Nutrition animale"
+    ]
+  },
+
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Betbèze",
+    "addressRegion": "Hautes-Pyrénées",
+    "addressCountry": "FR"
+  }
+};
 ---
 
 <html lang="fr">
@@ -21,6 +48,7 @@ const canonical = new URL(Astro.url.pathname, site).toString();
 
     <title>Ostéopathe animale à Betbèze (65)</title>
     <script>import "../scripts/sectionPaws.js";</script>
+    <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
 
     <title>{title}</title>
 
