@@ -20,7 +20,14 @@ const t = getDictionary(lang);
             {t.contact.form.description}
             </p>
 
-            <form action="/api/contact" method="POST" class="flex flex-col gap-4">
+            <form id="contact-form" action="/api/contact.php" method="POST" class="flex flex-col gap-4">
+                <input
+                    type="text"
+                    name="website"
+                    class="hidden"
+                    tabindex="-1"
+                    autocomplete="off"
+                />
                 <input
                     name="name"
                     type="text"
@@ -54,7 +61,7 @@ const t = getDictionary(lang);
                 ></textarea>
                 <button
                     type="submit"
-                    class="mt-2 bg-[#ffc001] text-white font-medium py-3 rounded-lg hover:bg-[#ff9933] transition"
+                    class="mt-2 text-white font-medium py-3 rounded-lg colors-cta transition"
                 >
                     {t.contact.form.button}
                 </button>
@@ -63,6 +70,44 @@ const t = getDictionary(lang);
                 </p>
             </form>
         </div>
+
+        <div
+            id="success-modal"
+            class="hidden fixed inset-0 flex items-center justify-center bg-black/30 z-50"
+            >
+            <div class="bg-white rounded-xl px-8 py-6 shadow-xl">
+                <p class="text-zinc-800">
+                Email envoyé
+                </p>
+            </div>
+        </div>
+
+        <script>
+            const form = document.getElementById("contact-form");
+            const modal = document.getElementById("success-modal");
+
+            form?.addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const data = new FormData(form);
+
+            const response = await fetch("/api/contact.php", {
+                method: "POST",
+                body: data,
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                modal.classList.remove("hidden");
+                form.reset();
+
+                setTimeout(() => {
+                modal.classList.add("hidden");
+                }, 3000);
+            }
+            });
+        </script>
 
         <!-- RIGHT: MAP + INFO -->
         <div class="flex flex-col gap-6">
@@ -87,6 +132,13 @@ const t = getDictionary(lang);
                 <div class="mt-4 text-sm">
                     <p class="font-medium">{t.contact.hours.title}</p>
                     <p class="text-zinc-600">{t.contact.hours.schedule}</p>
+                </div>
+
+                <div class="mt-4 text-sm">
+                    <p class="font-medium">{t.contact.phone.title}</p>
+                    <a href={`tel:${t.contact.phone.number}`} class="inline-flex items-center px-4 py-2 mt-2 rounded-lg text-white font-medium colors-cta text-sm">
+                        {t.contact.phone.number}
+                    </a>
                 </div>
             </div>
         </div>

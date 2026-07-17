@@ -36,4 +36,9 @@ export default {
     title: "Opening hours",
     schedule: "Mon - Sat: 9 am - 6 pm",
   },
+
+  phone: {
+    title: "Phone",
+    number: "+33 6 42 07 66 04",
+  },
 };
