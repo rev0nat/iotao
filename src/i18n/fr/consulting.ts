@@ -4,23 +4,24 @@ export default {
     description:
       "J'accompagne les entreprises qui développent des solutions en santé, nutrition et bien-être animal.",
   },
+
   hero: {
     eyebrow: "Conseil",
     title: "Conseil en santé animale",
     subtitle: "Une expertise scientifique et stratégique",
     description:
-      "J'accompagne les entreprises qui développent des solutions en santé, nutrition et bien-être animal.",
+      "J'accompagne les entreprises qui développent des solutions \nen santé, nutrition et bien-être animal.",
   },
 
   method: {
     eyebrow: "Une même méthode",
     title: "Observer avant d'agir.",
     description:
-      "Que j'accompagne un animal ou une entreprise, ma démarche reste la même : observer avec attention, comprendre les interactions, identifier les leviers essentiels, puis mettre en œuvre des solutions précises, adaptées et durables. Parce que les transformations les plus profondes naissent souvent d'un détail justement observé.",
+      "Que j'accompagne un animal ou une entreprise, ma démarche reste la même: \nobserver avec attention, comprendre les interactions, identifier les leviers essentiels, \npuis mettre en œuvre des solutions précises, adaptées et durables. \nParce que les transformations les plus profondes naissent souvent \nd'un détail justement observé.",
 
     collaborationTitle: "Travaillons ensemble",
     collaborationDescription:
-      "Chaque situation est unique. Je vous propose un premier échange afin de comprendre votre besoin et construire un accompagnement adapté.",
+      "Chaque situation est unique. \nJe vous propose un premier échange \nafin de comprendre votre besoin et construire un accompagnement adapté.",
   },
 
   domains: {
@@ -72,7 +73,7 @@ export default {
         title: "Audit & conseil",
         price: "Sur devis",
         description:
-          "Analyse de vos besoins, recommandations et accompagnement dans vos projets de développement.",
+          "Analyse de vos besoins, recommandations \net accompagnement dans vos projets de développement.",
         items: [
           "• Audit de structure",
           "• Recommandations personnalisées",
@@ -84,7 +85,7 @@ export default {
         title: "Formation",
         price: "Sur devis",
         description:
-          "Sessions de formation adaptées aux équipes et aux objectifs de votre entreprise.",
+          "Sessions de formation adaptées aux équipes \net aux objectifs de votre entreprise.",
         items: [
           "• Présentiel ou distanciel",
           "• Programme personnalisé",
@@ -96,7 +97,7 @@ export default {
         title: "Expertise vétérinaire",
         price: "Sur devis",
         description:
-          "Accompagnement ponctuel ou régulier sur des problématiques techniques ou cliniques spécifiques.",
+          "Accompagnement ponctuel ou régulier \nsur des problématiques techniques ou cliniques spécifiques.",
         items: [
           "• Études de cas",
           "• Conseils techniques",
@@ -108,7 +109,7 @@ export default {
         title: "Accompagnement de projet",
         price: "Sur devis",
         description:
-          "Participation au développement de projets en santé animale, innovation ou stratégie d'entreprise.",
+          "Participation au développement de projets \nen santé animale, innovation ou stratégie d'entreprise.",
         items: [
           "• Conseil stratégique",
           "• Suivi de projet",
@@ -121,7 +122,7 @@ export default {
   cta: {
     title: "Votre projet est unique.",
     description:
-      "N'hésitez pas à me contacter afin d'échanger sur vos besoins.",
+      "N'hésitez pas à me contacter \nafin d'échanger sur vos besoins.",
     primaryButton: "Demander un devis",
     secondaryButton: "Envoyer un e-mail",
   },

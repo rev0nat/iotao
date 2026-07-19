@@ -7,7 +7,7 @@ export default {
   form: {
     title: "Contact",
     description:
-      "Une question ? Une prise de rendez-vous ? Je vous réponds rapidement.",
+      "Une question ? Une prise de rendez-vous ? \nJe vous réponds rapidement.",
 
     fields: {
       name: "Nom",
@@ -38,7 +38,7 @@ export default {
   },
 
   phone: {
-    title: "Phone",
+    title: "Appeler",
     number: "+33 6 42 07 66 04",
   },
 };

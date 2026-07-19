@@ -1,0 +1,30 @@
+---
+import frCommon from "../i18n/fr/common";
+import enCommon from "../i18n/en/common";
+
+interface Props {
+  lang: "fr" | "en";
+}
+
+const { lang } = Astro.props as Props;
+
+const t = lang === "fr" ? frCommon : enCommon;
+
+const frenchPath = Astro.url.pathname.replace(/^\/en/, "") || "/";
+const englishPath = `/en${Astro.url.pathname === "/" ? "" : Astro.url.pathname}`;
+const year = new Date().getFullYear();
+---
+
+
+<footer class="w-full border-t border-zinc-200 bg-white py-8">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <p class="text-sm font-light text-zinc-500">
+      © {year} <a
+        href="mailto:ntololo@protonmail.com"
+        class="mx-1 hover:text-[#ff9933] transition-colors"
+      >
+        Anteo
+      </a> for Iotao — All rights reserved.
+    </p>
+  </div>
+</footer>

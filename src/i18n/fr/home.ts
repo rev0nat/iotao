@@ -9,7 +9,7 @@ export default {
     title: "La précision du geste.",
     subtitle: "La justesse du regard.",
     description:
-      "J'accompagne les animaux, leurs propriétaires et les entreprises de la santé animale avec une même exigence : observer, comprendre et agir avec précision.",
+      "J'accompagne les animaux, leurs propriétaires et les entreprises \nde la santé animale avec une même exigence : \nobserver, comprendre et agir avec précision.",
     cta: "Prendre rendez-vous",
     call: "Appeler",
   },
@@ -19,17 +19,17 @@ export default {
       {
         title: "Approche globale",
         description:
-          "Observation complète pour comprendre les interactions avant d'agir.",
+          "Observation complète \npour comprendre les interactions \navant d'agir.",
       },
       {
         title: "Expérience vétérinaire",
         description:
-          "Plus de 30 ans d'expérience clinique et internationale en santé animale.",
+          "Plus de 30 ans d'expérience \nclinique et internationale \nen santé animale.",
       },
       {
         title: "Soins précis",
         description:
-          "Techniques adaptées, précises et respectueuses du vivant.",
+          "Techniques adaptées, \nprécises et respectueuses \ndu vivant.",
       },
     ],
   },
@@ -40,17 +40,17 @@ export default {
     iota: {
       title: "Iota",
       description:
-        "Iota évoque l'attention portée au détail, à ce qui est presque invisible. En français, l'expression « bouger d'un iota » rappelle qu'un infime détail peut parfois faire toute la différence.",
+        "Iota évoque l'attention portée au détail, \nà ce qui est presque invisible. \nEn français, l'expression « bouger d'un iota » \nrappelle qu'un infime détail peut parfois faire toute la différence.",
     },
 
     tao: {
       title: "Tao",
       description:
-        "Tao évoque la recherche du mouvement juste, de l'équilibre et de l'harmonie dans l'observation, la précision et le respect du vivant.",
+        "Tao évoque la recherche du mouvement juste, \nde l'équilibre et de l'harmonie dans l'observation, \nla précision et le respect du vivant.",
     },
 
     conclusion:
-      "Sans revendiquer une référence philosophique particulière, cette résonance traduit ma manière d'exercer mon métier : une médecine du toucher fondée sur l'observation, la précision et le respect du vivant.",
+      "Sans revendiquer une référence philosophique particulière, \ncette résonance traduit ma manière d'exercer mon métier: \nune médecine du toucher fondée sur l'observation, la précision et le respect du vivant.",
   },
 
   expertise: {
@@ -60,7 +60,7 @@ export default {
       {
         title: "Médecine manuelle vétérinaire",
         description:
-          "Une approche complémentaire qui vise à restaurer la mobilité, améliorer le confort et accompagner la santé de l'animal dans le respect de sa physiologie.",
+          "Une approche complémentaire qui vise à restaurer la mobilité, \naméliorer le confort et accompagner la santé de l'animal \ndans le respect de sa physiologie.",
         link: "Découvrir les consultations →",
       },
       {
@@ -79,13 +79,13 @@ export default {
       {
         title: "Docteur vétérinaire",
         description:
-          "Formation complète en médecine vétérinaire et en ostéopathie vétérinaire.",
+          "Formation complète en médecine vétérinaire \net en ostéopathie vétérinaire.",
         link: "Découvrir les consultations →",
       },
       {
         title: "Expertise internationale",
         description:
-          "Plus de 30 ans d'expérience en santé animale, nutrition et développement stratégique.",
+          "Plus de 30 ans d'expérience en santé animale, \nnutrition et développement stratégique.",
         link: "Découvrir le conseil →",
       },
     ],
@@ -95,5 +95,10 @@ export default {
     title: "Un animal à soigner ?",
     contact: "Me contacter",
     call: "Appeler",
+  },
+
+  phone: {
+    title: "Appeler",
+    number: "+33 6 42 07 66 04",
   },
 };

@@ -4,12 +4,13 @@ export default {
     description:
       "La médecine manuelle vétérinaire est une approche complémentaire de la médecine générale vétérinaire qui s'appuie sur l'examen clinique, le toucher et la compréhension des équilibres fonctionnels de l'animal.",
   },
+
   hero: {
     eyebrow: "Consultations",
     title: "Des soins adaptés.",
     subtitle: "Pour chaque animal.",
     description:
-      "La médecine manuelle vétérinaire est une approche complémentaire de la médecine générale vétérinaire qui s'appuie sur l'examen clinique, le toucher et la compréhension des équilibres fonctionnels de l'animal.",
+      "La médecine manuelle vétérinaire est une approche complémentaire \nde la médecine générale vétérinaire qui s'appuie sur l'examen clinique, \nle toucher et la compréhension des équilibres fonctionnels de l'animal.",
   },
 
   overview: {
@@ -53,7 +54,7 @@ export default {
       {
         title: "Une médecine du toucher",
         description:
-          "Le toucher est un outil d'observation autant qu'un outil thérapeutique. Chaque geste est guidé par l'écoute des tissus, la précision du diagnostic et le respect de la physiologie de l'animal. L'objectif n'est jamais le geste pour lui-même, mais la recherche du mouvement juste.",
+          "Le toucher est un outil d'observation autant qu'un outil thérapeutique. \nChaque geste est guidé par l'écoute des tissus, \nla précision du diagnostic et le respect de la physiologie de l'animal. \nL'objectif n'est jamais le geste pour lui-même, \nmais la recherche du mouvement juste.",
       },
     ],
   },
@@ -61,8 +62,12 @@ export default {
   cta: {
     title: "Une question avant de prendre rendez-vous ?",
     description:
-      "N'hésitez pas à me contacter afin d'échanger sur la situation de votre animal et déterminer la prise en charge la plus adaptée.",
+      "N'hésitez pas à me contacter afin d'échanger sur la situation de votre animal \net déterminer la prise en charge la plus adaptée.",
     button: "Prendre rendez-vous",
-    call: "Appeler",
+  },
+
+  phone: {
+    title: "Appeler",
+    number: "+33 6 42 07 66 04",
   },
 };

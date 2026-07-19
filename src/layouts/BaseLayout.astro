@@ -2,6 +2,7 @@
 import "../styles/style.css";
 import "../styles/paws.css";
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
 interface Props {
   lang: "fr" | "en";
@@ -66,5 +67,6 @@ const schema = {
   <body class="bg-[#ff9933] text-[#2b2118] antialiased">
     <Header lang={lang} />
     <slot/>
+    <Footer lang={lang} />
   </body>
 </html>

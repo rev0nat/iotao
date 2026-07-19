@@ -1,31 +1,30 @@
-// src/i18n/en/about.ts
-
 export default {
   seo: {
     title: "About",
     description:
       "Behind every consultation lies the same conviction: understanding the animal as a whole in order to provide precise, respectful and personalized care.",
   },
+
   hero: {
     eyebrow: "About",
     title: "Expertise dedicated to living beings.",
-    subtitle: "Dr. of Vet medicineFrédérique CLUSEL",
+    subtitle: "Dr. of Veterinary Medicine Frédérique CLUSEL",
     description:
-      "Behind every consultation lies the same conviction: understanding the animal as a whole in order to provide precise, respectful and personalized care.",
+      "Behind every consultation lies the same conviction: \nunderstanding the animal as a whole \nin order to provide precise, respectful and personalized care.",
   },
 
   presentation: {
     image: "/images/frederique-clusel-veterinaire.webp",
 
     eyebrow: "My journey",
-    title: "A lifelong passion for animal health.",
+    title: "A passion for animal health.",
 
     paragraphs: [
-      "Driven by a lifelong passion for animals and the living world, Frédérique became a veterinarian and specialized in avian medicine.",
+      "Driven by a passion for animals and the living world, \nI became a Doctor of Veterinary Medicine \nand specialized in avian medicine.",
 
-      "After four years in veterinary practice, she joined the animal health and nutrition industry. Through international leadership roles and extensive professional and family travel, she discovered new cultures and perspectives. Over more than thirty years, she developed her leadership, strengthened her expertise and refined her business acumen.",
+      "After four years in veterinary practice, \nI joined the animal health and nutrition industry. \nThrough international leadership roles and professional and family travels, \nI discovered new cultures and perspectives. \nOver thirty years of experience refined my leadership, \nstrengthened my expertise and developed my business acumen.",
 
-      "Seeking to return to a more hands-on and thoughtful practice of veterinary medicine, she trained in Veterinary Manual Medicine (commonly referred to as veterinary osteopathy). Today, Frédérique supports both animals and animal health organizations with the same commitment to observation, precision and respect for living beings.",
+      "Seeking to return to a more thoughtful practice of veterinary medicine, \nI trained in Veterinary Manual Medicine (« veterinary osteopathy »). \nToday, I support both animals and organizations in the animal health sector.",
     ],
   },
 
@@ -38,7 +37,7 @@ export default {
         description: [
           "Doctor of Veterinary Medicine",
           "Executive MBA",
-          "Postgraduate qualification in Veterinary Osteopathy",
+          "Certified in Veterinary Osteopathy",
         ],
       },
 
@@ -47,7 +46,7 @@ export default {
         description: [
           "Executive Committee member and international executive.",
           "Led three global business divisions.",
-          "Delivered sustained double-digit growth, drove premiumization strategies, launched more than five major innovations and strengthened CSR initiatives.",
+          "Delivered sustained double-digit growth, \ndrove premiumization strategies, \nlaunched more than five major innovations \nand strengthened CSR initiatives.",
         ],
       },
 
@@ -55,23 +54,23 @@ export default {
         title: "Zoetis",
         description: [
           "EAME Group Director and Business Development Lead.",
-          "Turned a 5% decline into 12% growth through strategic business development.",
+          "Turned the activity around \nfrom a 5% decline to 12% growth.",
         ],
       },
 
       {
         title: "MSD",
         description: [
-          "Business Unit Director in France and Malaysia.",
-          "Successfully doubled revenue following the integration of merged activities.",
+          "Business Unit Director \nin France and Malaysia.",
+          "Successfully doubled revenue \nfollowing the integration of merged activities.",
         ],
       },
 
       {
         title: "Ceva & Vétoquinol",
         description: [
-          "Marketing and regulatory affairs roles across Europe and Southeast Asia.",
-          "Contributed to the development of animal health solutions.",
+          "Marketing and regulatory affairs roles \nacross Europe and Southeast Asia.",
+          "Contributed to the development \nof animal health solutions.",
         ],
       },
 
@@ -79,12 +78,12 @@ export default {
         title: "Veterinary Practice",
         description: [
           "Clinical practice focused on companion animals and birds.",
-          "Complemented by expertise in Veterinary Manual Medicine.",
+          "Expertise in Veterinary Manual Medicine.",
         ],
       },
     ],
   },
 
   quote:
-    "“Every animal deserves individual attention. My role is to help restore balance through gentle, precise and respectful care.”",
+    "“Every animal deserves individual attention. \nMy role is to support them \ntowards better balance through gentle, precise and respectful care.”",
 };

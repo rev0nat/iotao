@@ -4,12 +4,13 @@ export default {
     description:
       "Veterinary Manual Medicine is a complementary discipline to general veterinary practice, based on clinical examination, palpation and an understanding of the animal's functional balance.",
   },
+
   hero: {
     eyebrow: "Consultations",
     title: "Tailored care.",
     subtitle: "For every animal.",
     description:
-      "Veterinary Manual Medicine is a complementary discipline to general veterinary practice, based on clinical examination, palpation and an understanding of the animal's functional balance.",
+      "Veterinary Manual Medicine is a complementary discipline \nto general veterinary practice, based on clinical examination, \npalpation and an understanding of the animal's functional balance.",
   },
 
   overview: {
@@ -53,7 +54,7 @@ export default {
       {
         title: "A medicine of touch",
         description:
-          "Touch is both an observational and a therapeutic tool. Every movement is guided by tissue assessment, clinical precision and respect for the animal's physiology. The objective is never the technique itself, but finding the most appropriate movement.",
+          "Touch is both an observational and a therapeutic tool. \nEvery movement is guided by tissue assessment, \nclinical precision and respect for the animal's physiology. \nThe objective is never the technique itself, \nbut finding the most appropriate movement.",
       },
     ],
   },
@@ -61,8 +62,12 @@ export default {
   cta: {
     title: "Do you have a question before booking an appointment?",
     description:
-      "Feel free to contact me to discuss your animal's situation and determine the most appropriate course of care.",
+      "Feel free to contact me to discuss your animal's situation \nand determine the most appropriate course of care.",
     button: "Book an appointment",
-    call: "Call",
+  },
+
+  phone: {
+    title: "Call",
+    number: "+33 6 42 07 66 04",
   },
 };

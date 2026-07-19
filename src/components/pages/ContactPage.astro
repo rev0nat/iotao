@@ -16,7 +16,7 @@ const t = getDictionary(lang);
         <!-- LEFT: FORM -->
         <div class="bg-white rounded-2xl p-8 shadow-sm bg-zinc-50">
             <h2 class="text-2xl font-semibold mb-2">{t.contact.form.title}</h2>
-            <p class="text-sm text-zinc-600 mb-6">
+            <p class="text-sm text-zinc-600 mb-6 whitespace-pre-line">
             {t.contact.form.description}
             </p>
 
@@ -137,7 +137,7 @@ const t = getDictionary(lang);
                 <div class="mt-4 text-sm">
                     <p class="font-medium">{t.contact.phone.title}</p>
                     <a href={`tel:${t.contact.phone.number}`} class="inline-flex items-center px-4 py-2 mt-2 rounded-lg text-white font-medium colors-cta text-sm">
-                        {t.contact.phone.number}
+                        {t.contact.phone.title}
                     </a>
                 </div>
             </div>

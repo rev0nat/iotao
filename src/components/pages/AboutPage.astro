@@ -25,7 +25,7 @@ const t = getDictionary(lang);
         <span class="font-normal text-zinc-700">{t.about.hero.subtitle}</span>
         </h1>
 
-        <p class="mt-6 max-w-2xl mx-auto text-lg text-zinc-600">
+        <p class="mt-6 max-w-2xl mx-auto text-lg text-zinc-600 whitespace-pre-line">
         {t.about.hero.description}
         </p>
     </section>
@@ -56,22 +56,23 @@ const t = getDictionary(lang);
 
             <div class="mt-8 space-y-6 text-zinc-600 leading-8">
 
-            <p>
+            <p class="whitespace-pre-line">
                 {t.about.presentation.paragraphs[0]}
             </p>
 
-            <p>
+            <p class="whitespace-pre-line">
                 {t.about.presentation.paragraphs[1]}
             </p>
 
-            <p>       
+            <p class="whitespace-pre-line">
                 {t.about.presentation.paragraphs[2]}
             </p>
 
+            <p class="whitespace-pre-line">
                 {t.about.presentation.paragraphs[3]}
             </p>
 
-            <p>       
+            <p class="whitespace-pre-line">       
                 {t.about.presentation.paragraphs[4]}
             </p>
 
@@ -96,7 +97,7 @@ const t = getDictionary(lang);
 
                 <div class="mt-6 space-y-2 text-sm text-zinc-600 text-left">
                     {card.description.map((line) => (
-                    <p>• {line}</p>
+                    <p class="whitespace-pre-line">• {line}</p>
                     ))}
                 </div>
                 </div>
@@ -108,7 +109,7 @@ const t = getDictionary(lang);
     <section class="section-main-white">
         <div class="max-w-3xl mx-auto px-6 text-center">
 
-        <blockquote class="text-3xl font-light italic leading-relaxed text-zinc-800">
+        <blockquote class="text-3xl font-light italic leading-relaxed text-zinc-800 whitespace-pre-line">
             {t.about.quote}
         </blockquote>
 

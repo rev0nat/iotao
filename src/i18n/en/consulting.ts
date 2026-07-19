@@ -4,23 +4,24 @@ export default {
     description:
       "I support companies developing solutions in animal health, nutrition and animal welfare.",
   },
+
   hero: {
     eyebrow: "Consulting",
     title: "Animal Health Consulting",
     subtitle: "Scientific and strategic expertise",
     description:
-      "I support companies developing solutions in animal health, nutrition and animal welfare.",
+      "I support companies developing solutions \nin animal health, nutrition and animal welfare.",
   },
 
   method: {
     eyebrow: "One consistent approach",
     title: "Observe before acting.",
     description:
-      "Whether supporting an animal or an organization, my approach remains the same: observe carefully, understand interactions, identify essential levers, then implement precise, tailored and sustainable solutions. Because the deepest transformations often begin with a detail that has been properly understood.",
+      "Whether supporting an animal or an organization, my approach remains the same: \nobserve carefully, understand interactions, identify essential levers, \nthen implement precise, tailored and sustainable solutions. \nBecause the deepest transformations often begin \nwith a detail that has been properly observed.",
 
     collaborationTitle: "Let's work together",
     collaborationDescription:
-      "Every situation is unique. I offer an initial discussion to understand your needs and build a suitable approach.",
+      "Every situation is unique. \nI offer an initial discussion to understand your needs \nand build a suitable approach.",
   },
 
   domains: {
@@ -72,7 +73,7 @@ export default {
         title: "Audit & consulting",
         price: "Quotation upon request",
         description:
-          "Analysis of your needs, recommendations and support throughout your development projects.",
+          "Analysis of your needs, recommendations \nand support throughout your development projects.",
         items: [
           "• Organizational audit",
           "• Tailored recommendations",
@@ -84,7 +85,7 @@ export default {
         title: "Training",
         price: "Quotation upon request",
         description:
-          "Training sessions adapted to your teams and your company's objectives.",
+          "Training sessions adapted to your teams \nand your company's objectives.",
         items: [
           "• On-site or remote sessions",
           "• Customized program",
@@ -96,7 +97,7 @@ export default {
         title: "Veterinary expertise",
         price: "Quotation upon request",
         description:
-          "Occasional or ongoing support for specific technical or clinical challenges.",
+          "Occasional or ongoing support \nfor specific technical or clinical challenges.",
         items: [
           "• Case studies",
           "• Technical guidance",
@@ -108,7 +109,7 @@ export default {
         title: "Project support",
         price: "Quotation upon request",
         description:
-          "Contribution to the development of projects in animal health, innovation or business strategy.",
+          "Contribution to the development of projects \nin animal health, innovation or business strategy.",
         items: [
           "• Strategic advice",
           "• Project monitoring",
@@ -121,7 +122,7 @@ export default {
   cta: {
     title: "Your project is unique.",
     description:
-      "Feel free to contact me to discuss your needs.",
+      "Feel free to contact me \nto discuss your needs.",
     primaryButton: "Request a quote",
     secondaryButton: "Send an email",
   },

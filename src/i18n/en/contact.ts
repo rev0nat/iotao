@@ -7,7 +7,7 @@ export default {
   form: {
     title: "Contact",
     description:
-      "A question? Need an appointment? I will get back to you shortly.",
+      "A question? Need an appointment? \nI will get back to you shortly.",
 
     fields: {
       name: "Name",
@@ -38,7 +38,7 @@ export default {
   },
 
   phone: {
-    title: "Phone",
+    title: "Call",
     number: "+33 6 42 07 66 04",
   },
 };
