@@ -130,7 +130,7 @@ const t = getDictionary(lang);
         <div class="max-w-6xl mx-auto px-6 grid gap-8 md:grid-cols-2">
 
         <!-- Card -->
-        <div class="cards-main">
+        <div class="cards-main min-w-0">
             <div class="flex justify-between items-start gap-6">
             <h3 class="text-2xl font-medium">
                 {t.consulting.services.cards[0].title}
@@ -153,7 +153,7 @@ const t = getDictionary(lang);
         </div>
 
         <!-- Card -->
-        <div class="cards-main">
+        <div class="cards-main min-w-0">
             <div class="flex justify-between items-start gap-6">
             <h3 class="text-2xl font-medium">
                 {t.consulting.services.cards[1].title}
@@ -176,7 +176,7 @@ const t = getDictionary(lang);
         </div>
 
         <!-- Card -->
-        <div class="cards-main">
+        <div class="cards-main min-w-0">
             <div class="flex justify-between items-start gap-6">
             <h3 class="text-2xl font-medium">
                 {t.consulting.services.cards[2].title}
@@ -199,25 +199,25 @@ const t = getDictionary(lang);
         </div>
 
         <!-- Card -->
-        <div class="cards-main">
+        <div class="cards-main min-w-0">
             <div class="flex justify-between items-start gap-6">
-            <h3 class="text-2xl font-medium">
-                {t.consulting.services.cards[3].title}
-            </h3>
+                <h3 class="text-2xl font-medium">
+                    {t.consulting.services.cards[3].title}
+                </h3>
 
-            <span class="text-2xl font-light whitespace-nowrap">
-                {t.consulting.services.cards[3].price}
-            </span>
+                <span class="text-2xl font-light whitespace-nowrap">
+                    {t.consulting.services.cards[3].price}
+                </span>
             </div>
 
             <p class="mt-4 text-zinc-600 whitespace-pre-line">
-            {t.consulting.services.cards[3].description}
+                {t.consulting.services.cards[3].description}
             </p>
 
             <div class="mt-6 space-y-2 text-sm text-zinc-600">
-            <p>{t.consulting.services.cards[3].items[0]}</p>
-            <p>{t.consulting.services.cards[3].items[1]}</p>
-            <p>{t.consulting.services.cards[3].items[2]}</p>
+                <p>{t.consulting.services.cards[3].items[0]}</p>
+                <p>{t.consulting.services.cards[3].items[1]}</p>
+                <p>{t.consulting.services.cards[3].items[2]}</p>
             </div>
         </div>
 
@@ -239,7 +239,7 @@ const t = getDictionary(lang);
         <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
 
             <a
-            href="mailto:contact@votresite.fr"
+            href="/contact"
             class="px-6 py-3 rounded-full border border-zinc-300 colors-cta transition"
             >
             {t.consulting.cta.secondaryButton}
